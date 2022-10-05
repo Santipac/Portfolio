@@ -70,6 +70,8 @@ export default function Project({ text, title, img, stack, repo, deploy, id }) {
                 colo: 'white',
               }}
               fontWeight="bold"
+              fontSize={{ base: '0.8rem', md: 'lg' }}
+              p={{ base: '0.5rem', md: '1rem' }}
             >
               Código
             </Button>
@@ -94,6 +96,8 @@ export default function Project({ text, title, img, stack, repo, deploy, id }) {
                 bg: 'general.heading',
                 colo: 'white',
               }}
+              fontSize={{ base: '0.8rem', md: 'lg' }}
+              p={{ base: '0.5rem', md: '1rem' }}
             >
               Demo
             </Button>

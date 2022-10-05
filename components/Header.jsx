@@ -3,7 +3,7 @@ import { Box, Heading, useColorMode } from '@chakra-ui/react';
 import { SunIcon } from '@chakra-ui/icons';
 
 import DeskMenu from './DeskMenu';
-import MobileMenu from './MobileMenu';
+
 import { RotateAnimation } from '../assets/animations';
 
 const rotation = `${RotateAnimation} 10s linear infinite`;
@@ -35,11 +35,6 @@ export default function Header() {
           {/*NAV DESKTOP*/}
           <Box display={{ base: 'none', md: 'flex' }}>
             <DeskMenu />
-          </Box>
-
-          {/*NAV MOBILE*/}
-          <Box display={{ base: 'block', md: 'none' }}>
-            <MobileMenu />
           </Box>
 
           <SunIcon

@@ -7,8 +7,9 @@ import {
   Spinner,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
+
 import { useRef, useState } from 'react';
-import Swal from 'sweetalert2';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactSection() {
   const form = useRef();
@@ -27,24 +28,12 @@ export default function ContactSection() {
       .then(
         result => {
           setIsSending(false);
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Your message was send successfully',
-            showConfirmButton: false,
-            timer: 1500,
-          });
+          toast.success('Email enviado correctamente!');
         },
         error => {
           if (isSending) {
             setIsSending(false);
-            return Swal.fire({
-              position: 'center',
-              icon: 'error',
-              title: 'Oh something went wrong.Try again!',
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            toast.error('No se pudo enviar el Email');
           } else return;
         }
       );
@@ -60,6 +49,7 @@ export default function ContactSection() {
       alignItems="center"
       id="contact"
     >
+      <Toaster />
       <Heading
         as="h2"
         fontSize={{ base: '1.8rem', sm: '4xl', md: '6xl' }}
@@ -77,6 +67,8 @@ export default function ContactSection() {
             border="2px solid"
             _light={{ borderColor: 'blackAlpha.300' }}
             _dark={{ borderColor: 'whiteAlpha.500' }}
+            minLength="2"
+            required
           />
           <Input
             type={'email'}
@@ -86,6 +78,8 @@ export default function ContactSection() {
             border="2px solid"
             _light={{ borderColor: 'blackAlpha.300' }}
             _dark={{ borderColor: 'whiteAlpha.500' }}
+            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            required
           />
           <Textarea
             minH={'10rem'}
@@ -94,6 +88,8 @@ export default function ContactSection() {
             border="2px solid"
             _light={{ borderColor: 'blackAlpha.300' }}
             _dark={{ borderColor: 'whiteAlpha.500' }}
+            required
+            minLength="15"
           />
           <Button
             disabled={isSending ? true : false}

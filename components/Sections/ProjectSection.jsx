@@ -1,6 +1,6 @@
 import { Box, Grid, Heading } from '@chakra-ui/react';
 import projectsInfo from '../../helpers/projectsInfo';
-import Project from '../Project';
+import { CardProject } from '../CardProject';
 
 export default function ProjectSection() {
   return (
@@ -29,7 +29,7 @@ export default function ProjectSection() {
         mt="16"
       >
         {projectsInfo.map(el => (
-          <Project
+          <CardProject
             img={el.img}
             title={el.title}
             text={el.text}

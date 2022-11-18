@@ -10,9 +10,9 @@ export const navigation = [
 
 export default function DeskMenu() {
   return (
-    <UnorderedList listStyleType="none" display="flex">
+    <UnorderedList listStyleType="none" display="flex" gap={4}>
       {navigation.map(el => (
-        <ListItem key={el.id} fontSize={{ base: '1rem', md: '1.5rem' }} px="2">
+        <ListItem key={el.id} fontSize={{ base: '1rem', md: '1.5rem' }}>
           <LinkRouter href={el.link}>
             <Link _hover={{ color: 'general.heading' }}>{el.text}</Link>
           </LinkRouter>

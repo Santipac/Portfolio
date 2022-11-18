@@ -32,7 +32,6 @@ export default function Header() {
         </Heading>
 
         <Box display="flex" alignItems="center">
-          {/*NAV DESKTOP*/}
           <Box display={{ base: 'none', md: 'flex' }}>
             <DeskMenu />
           </Box>

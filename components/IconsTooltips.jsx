@@ -13,7 +13,11 @@ import {
   SiRedux,
   SiVisualstudiocode,
   SiNextdotjs,
+  SiPrisma,
+  SiPostgresql,
 } from 'react-icons/si';
+
+//TODO : hacerlo accesible para mobile
 
 export default function IconsTooltips() {
   return (
@@ -79,16 +83,6 @@ export default function IconsTooltips() {
         </span>
       </Tooltip>
       <Tooltip
-        label="Firebase"
-        aria-label="A tooltip"
-        bgColor="#F29F13"
-        color="white"
-      >
-        <span>
-          <SiFirebase size="30px" color="#F29F13" />
-        </span>
-      </Tooltip>
-      <Tooltip
         label="NodeJS"
         aria-label="A tooltip"
         bgColor="#4E963F"
@@ -108,6 +102,32 @@ export default function IconsTooltips() {
           <SiMongodb size="30px" color="#3B8F36" />
         </span>
       </Tooltip>
+      <Tooltip
+        label="Firebase"
+        aria-label="A tooltip"
+        bgColor="#F29F13"
+        color="white"
+      >
+        <span>
+          <SiFirebase size="30px" color="#F29F13" />
+        </span>
+      </Tooltip>
+      <Tooltip
+        label="PostgreSQL"
+        aria-label="A tooltip"
+        bgColor="#2F5B8B"
+        color="white"
+      >
+        <span>
+          <SiPostgresql size="30px" color="#2F5B8B" />
+        </span>
+      </Tooltip>
+      <Tooltip label="Prisma" aria-label="A tooltip" color="white">
+        <span>
+          <SiPrisma size="30px" />
+        </span>
+      </Tooltip>
+
       <Tooltip label="NextJS" aria-label="A tooltip">
         <span>
           <SiNextdotjs size="30px" color="#FFFFF" />

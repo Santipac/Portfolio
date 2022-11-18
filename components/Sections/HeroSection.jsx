@@ -1,10 +1,17 @@
-import { Box, Button, Grid, GridItem, Heading, Link } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Grid,
+  GridItem,
+  Heading,
+  Link,
+  Text,
+} from '@chakra-ui/react';
 import {
   IoIosArrowRoundDown,
   IoLogoGithub,
   IoLogoLinkedin,
 } from 'react-icons/io';
-import { SiGmail } from 'react-icons/si';
 import { ArrowDownAnimation } from '../../assets/animations';
 
 export default function HeroSection() {
@@ -55,14 +62,6 @@ export default function HeroSection() {
               gap="6"
               py="4"
             >
-              <Link
-                href="mailto:santiagopacini@gmail.com"
-                target="_blank"
-                _hover={{ color: '#de4032', transform: 'translateY(-10px)' }}
-              >
-                <SiGmail size="30px" />
-              </Link>
-
               <Link
                 href="https://www.linkedin.com/in/santiago-pacini-frontend-dev-jr/"
                 target="_blank"

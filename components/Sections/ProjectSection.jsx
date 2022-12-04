@@ -2,7 +2,7 @@ import { Box, Grid, Heading } from '@chakra-ui/react';
 import projectsInfo from '../../helpers/projectsInfo';
 import { CardProject } from '../CardProject';
 
-export default function ProjectSection() {
+export function ProjectSection() {
   return (
     <Box
       w="100%"

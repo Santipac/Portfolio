@@ -14,7 +14,7 @@ import {
 } from 'react-icons/io';
 import { ArrowDownAnimation } from '../../assets/animations';
 
-export default function HeroSection() {
+export function HeroSection() {
   const slide = `${ArrowDownAnimation} 1.3s linear infinite`;
 
   return (

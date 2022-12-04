@@ -4,6 +4,7 @@ import React from 'react';
 
 export const navigation = [
   { id: new Date().getTime() * 2, link: '#about', text: 'Sobre' },
+  { id: new Date().getTime(), link: '#experience', text: 'Experiencia' },
   { id: new Date().getTime() * 3, link: '#projects', text: 'Proyectos' },
   { id: new Date().getTime() * 4, link: '#contact', text: 'Contacto' },
 ];

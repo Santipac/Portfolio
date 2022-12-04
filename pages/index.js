@@ -1,11 +1,14 @@
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import Header from '../components/Header';
-import AboutSection from '../components/Sections/AboutSection';
-import ContactSection from '../components/Sections/ContactSection';
-import Footer from '../components/Sections/FooterSection';
-import HeroSection from '../components/Sections/HeroSection';
-import ProjectSection from '../components/Sections/ProjectSection';
+import {
+  AboutSection,
+  ContactSection,
+  FooterSection,
+  HeroSection,
+  ProjectSection,
+  ExperienceSection,
+} from '../components/Sections';
 
 export default function Home() {
   return (
@@ -18,9 +21,10 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <ExperienceSection />
       <ProjectSection />
       <ContactSection />
-      <Footer />
+      <FooterSection />
     </Box>
   );
 }

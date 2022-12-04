@@ -2,7 +2,7 @@ import { Box, Button, Heading, Link } from '@chakra-ui/react';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 import { ArrowDownAnimation } from '../../assets/animations';
 
-export default function Footer() {
+export function FooterSection() {
   const slide = `${ArrowDownAnimation} 1.3s linear infinite`;
   return (
     <>

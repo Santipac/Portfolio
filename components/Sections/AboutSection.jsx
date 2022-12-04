@@ -1,7 +1,7 @@
 import { Box, Heading, Text, Tooltip } from '@chakra-ui/react';
 import IconsTooltips from '../IconsTooltips';
 
-export default function AboutSection() {
+export function AboutSection() {
   return (
     <Box
       w="100%"

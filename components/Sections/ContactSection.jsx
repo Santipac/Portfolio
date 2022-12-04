@@ -11,7 +11,7 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function ContactSection() {
+export function ContactSection() {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
 

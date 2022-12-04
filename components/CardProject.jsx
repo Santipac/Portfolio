@@ -18,7 +18,7 @@ export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
   return (
     <Card maxW="lg">
       <CardBody paddingX={3}>
-        <Image src={img} alt={title} borderRadius="lg" />
+        <Image src={img} alt={title} style={{ borderRadius: '0.5rem' }} />
         <Stack mt="6" spacing="3">
           <Heading size="md">{title}</Heading>
           <Text

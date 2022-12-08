@@ -7,12 +7,15 @@ import {
   Link,
   Text,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import {
   IoIosArrowRoundDown,
   IoLogoGithub,
   IoLogoLinkedin,
 } from 'react-icons/io';
 import { ArrowDownAnimation } from '../../assets/animations';
+import { staggerContainer } from '../../utils/motion';
+import { TitleText, TypingText } from '../ui/CustomText';
 
 export function HeroSection() {
   const slide = `${ArrowDownAnimation} 1.3s linear infinite`;
@@ -34,25 +37,23 @@ export function HeroSection() {
       >
         <Grid>
           <GridItem>
-            <Heading
-              as="h1"
-              fontWeight="bold"
-              fontSize={{ base: '1.8rem', sm: '4xl', md: '6xl' }}
-              textAlign="center"
-              color={'general.heading'}
-            >
-              Santiago Pacini
-            </Heading>
+            <TitleText
+              title="Santiago Pacini"
+              textStyles={{ textAlign: 'center' }}
+            />
           </GridItem>
-          <GridItem textAlign="center">
-            <Heading
-              as="h3"
-              fontWeight="normal"
+          <GridItem
+            textAlign="center"
+            as={motion.div}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+          >
+            <TypingText
+              title="Desarrollador Full-Stack"
               fontSize={{ base: '1rem', sm: 'xl', md: '3xl' }}
-              _light={{ color: 'blackAlpha.800' }}
-            >
-              Desarrollador Frontend
-            </Heading>
+            />
           </GridItem>
           <GridItem>
             <Box

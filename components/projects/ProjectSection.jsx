@@ -1,10 +1,18 @@
-import { Box, Grid, Heading } from '@chakra-ui/react';
-import projectsInfo from '../../helpers/projectsInfo';
-import { CardProject } from '../CardProject';
+import { Box, Grid } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import projectsInfo from '../../constants/projectsInfo';
+import { staggerContainer } from '../../utils/motion';
+import { TitleText } from '../ui';
+import { CardProject } from './CardProject';
 
 export function ProjectSection() {
   return (
     <Box
+      as={motion.div}
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       w="100%"
       minH="100vh"
       p="5"
@@ -13,14 +21,7 @@ export function ProjectSection() {
       id="projects"
       alignItems="center"
     >
-      <Heading
-        as="h2"
-        fontWeight="bold"
-        fontSize={{ base: '1.8rem', sm: '4xl', md: '6xl' }}
-        color={'general.heading'}
-      >
-        Proyectos
-      </Heading>
+      <TitleText title="Proyectos" textStyles={{ textAlign: 'center' }} />
       <Grid
         w={{ base: '95%', md: '70%' }}
         templateColumns={{ lg: 'repeat(2, 1fr)' }}

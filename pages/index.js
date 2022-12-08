@@ -1,14 +1,12 @@
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
-import Header from '../components/Header';
-import {
-  AboutSection,
-  ContactSection,
-  FooterSection,
-  HeroSection,
-  ProjectSection,
-  ExperienceSection,
-} from '../components/Sections';
+import { AboutSection } from '../components/about';
+import { ContactSection } from '../components/contact';
+import { ExperienceSection } from '../components/experience';
+import { FooterSection } from '../components/footer';
+import { HeroSection } from '../components/hero';
+import { ProjectSection } from '../components/projects';
+import { Header } from '../components/ui';
 
 export default function Home() {
   return (

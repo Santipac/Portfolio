@@ -13,10 +13,16 @@ import {
   Text,
 } from '@chakra-ui/react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../utils/motion';
 
 export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
   return (
-    <Card maxW="lg">
+    <Card
+      maxW="lg"
+      as={motion.div}
+      variants={fadeIn('up', 'spring', id * 0.9, 3)}
+    >
       <CardBody paddingX={3}>
         <Image src={img} alt={title} style={{ borderRadius: '0.5rem' }} />
         <Stack mt="6" spacing="3">
@@ -30,18 +36,23 @@ export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
           </Text>
           <Box display="flex" flexWrap="wrap">
             {stack.map((el, i) => (
-              <Text
+              <Box
                 key={i}
-                m="1"
-                _light={{ bg: 'blackAlpha.50' }}
-                _dark={{ bg: 'whiteAlpha.300' }}
-                fontSize={{ base: '0.8rem', md: 'md' }}
-                textAlign="center"
-                p={{ base: '0.3rem' }}
-                borderRadius="md"
+                as={motion.div}
+                variants={fadeIn('right', 'spring', i * 0.4, 0.75)}
               >
-                {el}
-              </Text>
+                <Text
+                  m="1"
+                  _light={{ bg: 'blackAlpha.50' }}
+                  _dark={{ bg: 'whiteAlpha.300' }}
+                  fontSize={{ base: '0.8rem', md: 'md' }}
+                  textAlign="center"
+                  p={{ base: '0.3rem' }}
+                  borderRadius="md"
+                >
+                  {el}
+                </Text>
+              </Box>
             ))}
           </Box>
         </Stack>

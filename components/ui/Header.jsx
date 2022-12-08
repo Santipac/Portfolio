@@ -4,11 +4,11 @@ import { SunIcon } from '@chakra-ui/icons';
 
 import DeskMenu from './DeskMenu';
 
-import { RotateAnimation } from '../assets/animations';
+import { RotateAnimation } from '../../assets/animations';
 
 const rotation = `${RotateAnimation} 10s linear infinite`;
 
-export default function Header() {
+export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -50,4 +50,4 @@ export default function Header() {
       </Box>
     </>
   );
-}
+};

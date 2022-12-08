@@ -1,15 +1,8 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Input,
-  Textarea,
-  Spinner,
-} from '@chakra-ui/react';
+import { Box, Button, Input, Textarea, Spinner } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-
 import { useRef, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { TitleText } from '../ui';
 
 export function ContactSection() {
   const form = useRef();
@@ -50,13 +43,7 @@ export function ContactSection() {
       id="contact"
     >
       <Toaster />
-      <Heading
-        as="h2"
-        fontSize={{ base: '1.8rem', sm: '4xl', md: '6xl' }}
-        color={'general.heading'}
-      >
-        Contáctame
-      </Heading>
+      <TitleText title="Contacto" textStyles={{ textAlign: 'center' }} />
       <form onSubmit={sendEmail} ref={form}>
         <Box mt="16">
           <Input

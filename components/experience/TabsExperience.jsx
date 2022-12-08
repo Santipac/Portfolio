@@ -11,8 +11,10 @@ import {
   Tabs,
   Text,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import React from 'react';
 import { GoTriangleRight } from 'react-icons/go';
+import { fadeIn, staggerContainer } from '../../utils/motion';
 
 export const TabsExperience = () => {
   return (
@@ -36,8 +38,18 @@ export const TabsExperience = () => {
         </Tab>
       </TabList>
 
-      <TabPanels>
-        <TabPanel px={0}>
+      <TabPanels
+        as={motion.div}
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+      >
+        <TabPanel
+          px={0}
+          as={motion.div}
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+        >
           <Flex flexDirection="column">
             <Flex gap="2" flexDirection={{ base: 'column', md: 'row' }}>
               <Heading
@@ -117,7 +129,7 @@ export const TabsExperience = () => {
             </List>
           </Flex>
         </TabPanel>
-        <TabPanel>
+        <TabPanel as={motion.div} variants={fadeIn('right', 'tween', 0.2, 1)}>
           <Flex flexDirection="column">
             <Flex gap="2">
               <Heading as="h2" fontSize="2xl" fontWeight="normal">

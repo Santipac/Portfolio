@@ -1,6 +1,6 @@
-import { Box, Heading } from '@chakra-ui/react';
-import React from 'react';
-import { TabsExperience } from '../TabsExperience';
+import { Box } from '@chakra-ui/react';
+import { TitleText } from '../ui';
+import { TabsExperience } from './TabsExperience';
 
 export function ExperienceSection() {
   return (
@@ -21,15 +21,7 @@ export function ExperienceSection() {
         alignContent="center"
         w={{ base: '90%', lg: '60%' }}
       >
-        <Heading
-          as="h2"
-          fontWeight="bold"
-          fontSize={{ base: '1.8rem', sm: '4xl', md: '6xl' }}
-          textAlign="center"
-          color={'general.heading'}
-        >
-          Experiencia
-        </Heading>
+        <TitleText title="Experiencia" textStyles={{ textAlign: 'center' }} />
         <Box>
           <TabsExperience />
         </Box>

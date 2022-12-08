@@ -67,7 +67,7 @@ export const TabsExperience = () => {
                 @Distrisuper
               </Heading>
             </Flex>
-            <Text color="black" fontSize={{ base: 'sm', md: 'md' }}>
+            <Text fontSize={{ base: 'sm', md: 'md' }}>
               Agosto 2022 - Presente
             </Text>
             <List
@@ -117,7 +117,6 @@ export const TabsExperience = () => {
                 />
                 Consumo de APIs con Axios y Hooks.
               </ListItem>
-              {/* You can also use custom icons from react-icons */}
               <ListItem>
                 <ListIcon
                   as={GoTriangleRight}
@@ -129,25 +128,44 @@ export const TabsExperience = () => {
             </List>
           </Flex>
         </TabPanel>
-        <TabPanel as={motion.div} variants={fadeIn('right', 'tween', 0.2, 1)}>
+        <TabPanel
+          as={motion.div}
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          px={0}
+        >
           <Flex flexDirection="column">
-            <Flex gap="2">
-              <Heading as="h2" fontSize="2xl" fontWeight="normal">
+            <Flex gap="2" flexDirection={{ base: 'column', md: 'row' }}>
+              <Heading
+                as="h2"
+                fontSize={{ base: 'lg', md: '2xl' }}
+                fontWeight="normal"
+              >
                 React Developer
               </Heading>
-              <Heading as="h2" fontSize="2xl" color="general.heading">
+              <Heading
+                as="h2"
+                fontSize={{ base: 'lg', md: '2xl' }}
+                color="general.heading"
+              >
                 @Alkemy
               </Heading>
             </Flex>
-            <Text color="black">Octubre 2022 - Noviembre 2022</Text>
-            <List spacing={3} pl={4} pt={4}>
+            <Text fontSize={{ base: 'sm', md: 'md' }}>
+              Octubre 2022 - Noviembre 2022
+            </Text>
+            <List
+              spacing={3}
+              pl={{ base: 0, md: '4' }}
+              pt={4}
+              fontSize={{ base: 'sm', md: 'md' }}
+            >
               <ListItem>
                 <ListIcon
                   as={GoTriangleRight}
                   color="general.heading"
                   size="md"
                 />
-                Desarrollo de Homebanking para AlkyBank.
+                Desarrollo de Homebanking para Alkybank.{' '}
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -163,7 +181,7 @@ export const TabsExperience = () => {
                   color="general.heading"
                   size="md"
                 />
-                Enrutamiento (protección de rutas).
+                Enrutamiento (protección de rutas).{' '}
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -179,7 +197,7 @@ export const TabsExperience = () => {
                   color="general.heading"
                   size="md"
                 />
-                Consumo de APIs para realizar las transacciones.
+                Consumo de APIs para realizar transacciones.
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -187,16 +205,15 @@ export const TabsExperience = () => {
                   color="general.heading"
                   size="md"
                 />
-                Carga, Retiro y Transferencia de dinero entre distintas cuentas.
+                Carga, Retiro y Transferencia de dinero entre distintas cuentas.{' '}
               </ListItem>
-              {/* You can also use custom icons from react-icons */}
               <ListItem>
                 <ListIcon
                   as={GoTriangleRight}
                   color="general.heading"
                   size="md"
                 />
-                Interacción con otros usuarios registrados.
+                Interacción con otros usuarios registrados.{' '}
               </ListItem>
             </List>
           </Flex>

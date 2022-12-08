@@ -35,11 +35,7 @@ export function AboutSection() {
           initial="hidden"
           whileInView="show"
         >
-          Hola! Soy Santiago, un Desarrollador Frontend apasionado en busca de
-          su primer empleo en el mundo IT. Soy una persona perseverante,
-          disciplinada, autodidacta y curiosa. Mi objetivo está en seguir
-          aprendiendo y progresando como Desarrollador para poder dar lo mejor
-          de mí y lograr cosas importantes.
+          Hola! Soy Santiago, un Desarrollador Full-Stack. Soy una persona perseverante, disciplinada, autodidacta y curiosa. Mi objetivo está en seguir aprendiendo para ser un mejor desarrollador y lograr grandes cosas. Soy una persona que disfruta del aprendizaje, que le gustan los desafíos. Tengo la dedicación, motivación y la pasión para crecer como profesional y para disfrutar del proceso.
         </Text>
         <Text
           as={motion.p}

@@ -12,9 +12,11 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
+import { CiImageOff } from 'react-icons/ci';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
+import Noimage from '../../public/images/Projects/Noimage.png';
 
 export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
   return (
@@ -24,7 +26,12 @@ export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
       variants={fadeIn('up', 'spring', id * 0.9, 3)}
     >
       <CardBody paddingX={3}>
-        <Image src={img} alt={title} style={{ borderRadius: '0.5rem' }} />
+        {img === null ? (
+          <Image src={Noimage} alt={title} style={{ borderRadius: '0.5rem' }} />
+        ) : (
+          <Image src={img} alt={title} style={{ borderRadius: '0.5rem' }} />
+        )}
+
         <Stack mt="6" spacing="3">
           <Heading size="md">{title}</Heading>
           <Text
@@ -80,32 +87,44 @@ export const CardProject = ({ text, title, img, stack, repo, deploy, id }) => {
               Código
             </Button>
           </Link>
-
-          <Link
-            href={deploy}
-            target="_blank"
-            textDecoration={'none !important'}
-          >
+          {deploy === null ? (
             <Button
+              disabled
               _light={{
                 bg: 'blackAlpha.200',
-                _hover: {
-                  transform: 'translateY(-10px)',
-                  bg: 'general.heading',
-                  color: 'white',
-                },
-              }}
-              _hover={{
-                transform: 'translateY(-10px)',
-                bg: 'general.heading',
-                color: 'white',
               }}
               fontSize={{ base: '0.8rem', md: 'lg' }}
               p={{ base: '0.5rem', md: '1rem' }}
             >
               Demo
             </Button>
-          </Link>
+          ) : (
+            <Link
+              href={deploy}
+              target="_blank"
+              textDecoration={'none !important'}
+            >
+              <Button
+                _light={{
+                  bg: 'blackAlpha.200',
+                  _hover: {
+                    transform: 'translateY(-10px)',
+                    bg: 'general.heading',
+                    color: 'white',
+                  },
+                }}
+                _hover={{
+                  transform: 'translateY(-10px)',
+                  bg: 'general.heading',
+                  color: 'white',
+                }}
+                fontSize={{ base: '0.8rem', md: 'lg' }}
+                p={{ base: '0.5rem', md: '1rem' }}
+              >
+                Demo
+              </Button>
+            </Link>
+          )}
         </ButtonGroup>
       </CardFooter>
     </Card>

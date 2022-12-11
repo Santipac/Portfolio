@@ -21,19 +21,14 @@ export function HeroSection() {
   const slide = `${ArrowDownAnimation} 1.3s linear infinite`;
 
   return (
-    <>
+    <Box w="100%" h="95vh" id="home">
       <Box
+        w="full"
+        h="full"
         display="flex"
         flexDirection="column"
-        w="100%"
-        h="95vh"
         justifyContent="center"
         alignItems="center"
-        id="home"
-        position="relative"
-        top="0"
-        left="0"
-        zIndex="1"
       >
         <Grid>
           <GridItem>
@@ -99,6 +94,6 @@ export function HeroSection() {
           </Button>
         </Heading>
       </Box>
-    </>
+    </Box>
   );
 }

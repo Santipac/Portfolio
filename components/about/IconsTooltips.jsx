@@ -122,7 +122,12 @@ export default function IconsTooltips() {
           <SiPostgresql size="30px" color="#2F5B8B" />
         </span>
       </Tooltip>
-      <Tooltip label="Prisma" aria-label="A tooltip" color="white">
+      <Tooltip
+        label="Prisma"
+        aria-label="A tooltip"
+        _light={{ color: 'white' }}
+        _dark={{ bgColor: 'white', color: 'black' }}
+      >
         <span>
           <SiPrisma size="30px" />
         </span>

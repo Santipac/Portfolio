@@ -23,6 +23,23 @@ const projectsInfo = [
   },
   {
     id: 2,
+    img: null,
+    title: 'RESTful-API Blog',
+    text: `Backend para un Blog que está en desarrollo. CRUD con despliegue en Railway. Trabajo en local con contenedor Docker.`,
+    stack: [
+      'NodeJS',
+      'Express',
+      'Typescript',
+      'Prisma',
+      'PostgreSQL',
+      'JWT',
+      'Postman',
+    ],
+    repo: 'https://github.com/Santipac/REST-Blog',
+    deploy: null,
+  },
+  {
+    id: 3,
     img: CalendarApp,
     title: 'CalendarApp',
     text: `Aplicación MERN de Calendario para equipos, cada Usuario puede modificar o eliminar sus propios Eventos pero solo puede leer los de los demás. `,
@@ -40,7 +57,7 @@ const projectsInfo = [
   },
 
   {
-    id: 3,
+    id: 4,
     img: TodoApp,
     title: 'Todo App',
     text: `CRUD Aplicacion de tareas con Autenticación. Podes modificar las tareas, marcar como completada o borrarlas. Autenticación y Base de Datos con Firebase.`,
@@ -54,15 +71,6 @@ const projectsInfo = [
     ],
     repo: 'https://github.com/Santipac/Todo-App',
     deploy: 'https://todo-app-santipac.vercel.app/',
-  },
-  {
-    id: 4,
-    img: WeatherApp,
-    title: 'Weather App',
-    text: `Weather app donde se puede consultar el clima en tiempo real, o aproximados del día. Incluye un Modo Oscuro.`,
-    stack: ['ReactJS', 'Tailwind', 'Axios'],
-    repo: 'https://github.com/Santipac/WeatherApp',
-    deploy: 'https://weather-app-santipac.vercel.app/',
   },
 ];
 export default projectsInfo;

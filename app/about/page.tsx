@@ -22,6 +22,8 @@ export default async function AboutPage() {
               height={400}
               className="rounded-lg object-cover"
               quality={100}
+              priority={true}
+              placeholder='blur'
             />
           </div>
           <section className="flex flex-col space-y-6">

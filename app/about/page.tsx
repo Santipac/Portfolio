@@ -35,13 +35,11 @@ export default async function AboutPage() {
             </article>
             <article className="flex flex-col space-y-2 w-full ">
               <p className="text-zinc-300 text-sm leading-7 text-center md:text-start">
-                {' '}
                 I&apos;m passionate about everything related to technology and
                 innovation. I&apos;ve worked using agile methodologies such as
                 Scrum or Kanban in different work environments.
               </p>
               <p className="text-zinc-300 text-sm leading-7 text-center md:text-start">
-                {' '}
                 I&apos;m currently learning about technologies such as tRPC,
                 NextJS. Also I&apos;m taking a course of UX / UI Design.
               </p>
@@ -63,6 +61,7 @@ export default async function AboutPage() {
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>Firebase</li>
+                <li>Zod</li>
                 <li>Git</li>
                 <li>Figma</li>
               </ul>

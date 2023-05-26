@@ -2,23 +2,33 @@ import { projects } from '@/constants/projects';
 import { Header } from './header';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-type Props = {
+import { Locale } from '@/i18n-config';
+import { getTranslation } from '@/get-translation';
+type PropsParams = {
   params: {
     slug: string;
   };
 };
 
-export async function generateStaticParams(): Promise<Props['params'][]> {
-  return projects.map(project => ({ slug: project.slug }));
+interface Props {
+  params: {
+    slug: string;
+    lang: Locale;
+  };
+}
+export async function generateStaticParams(): Promise<PropsParams['params'][]> {
+  const projectsES = projects.es.map(project => ({ slug: project.slug }));
+  const projectsEN = projects.en.map(project => ({ slug: project.slug }));
+  return [...projectsEN, ...projectsES];
 }
 export default async function PostPage({ params }: Props) {
   const slug = params?.slug;
-  const project = projects.find(project => project.slug === slug);
+  const project = projects[params.lang].find(project => project.slug === slug);
 
   if (!project) {
     notFound();
   }
-
+  const t = await getTranslation(params.lang);
   return (
     <div className="bg-zinc-50 min-h-screen">
       <Header project={project} />
@@ -34,7 +44,9 @@ export default async function PostPage({ params }: Props) {
           )}
           <p className="leading-7">{project.description}</p>
           <p className="leading-7">
-            Some of the technologies used in this project:
+            {params.lang === 'es'
+              ? 'Algunas de las tecnologías que utilice en este proyecto:'
+              : 'Some of the technologies used in this project'}
           </p>
           <div className="flex justify-center flex-wrap gap-4">
             {project.stack.map(tec => (

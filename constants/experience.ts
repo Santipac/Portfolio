@@ -1,39 +1,80 @@
-export const experience = [
-  {
-    company: 'Distrisuper',
-    position: 'Frontend Developer',
-    time: 'Aug 2022 - Present',
-    description:
-      'Creation of Admin Dashboards for the automation of customer tasks.',
-    task: [
-      ' Creation of tables with filters to speed up the queries of remittances and invoices from the backend.',
-      'Route management for correct navigation between views',
-      ' Context API to manage the global state in a simple way and without dependencies.',
-    ],
-  },
-  {
-    company: 'PerfectGift.ai',
-    position: 'Frontend Developer',
-    time: 'Jan 2023 - Feb 2023',
-    description:
-      'Application that helps the user to choose a gift through prompts that are sent to an AI.',
-    task: [
-      'Creation of the form for AI queries. And validations of the fields to ensure the correct submission of the form.',
-      'Redux architecture for clean and scalable global state management.',
-      'Route management for correct navigation between views.',
-    ],
-  },
-  {
-    company: 'Alkemy',
-    position: 'React Developer',
-    time: 'Oct 2022 - Nov 2022',
-    description:
-      'Homebanking for Alkybank, a group project carried out to enhance the skills of the participants of the internship.',
-    task: [
-      'Homebaking developed using React and MaterialUI which contributed in an effective and attractive interface.',
-      'Redux architecture for clean and scalable global state management.',
-      'Testing of components with Jest.',
-      'User Authentication with JsonWebToken',
-    ],
-  },
-];
+export const experience = {
+  en: [
+    {
+      company: 'Distrisuper',
+      position: 'Frontend Developer',
+      time: 'Aug 2022 - Present',
+      description:
+        'Creation of Admin Dashboards for the automation of customer tasks.',
+      task: [
+        ' Creation of tables with filters to speed up the queries of remittances and invoices from the backend.',
+        'Route management for correct navigation between views',
+        ' Context API to manage the global state in a simple way and without dependencies.',
+      ],
+    },
+    {
+      company: 'PerfectGift.ai',
+      position: 'Frontend Developer',
+      time: 'Jan 2023 - Feb 2023',
+      description:
+        'Application that helps the user to choose a gift through prompts that are sent to an AI.',
+      task: [
+        'Creation of the form for AI queries. And validations of the fields to ensure the correct submission of the form.',
+        'Redux architecture for clean and scalable global state management.',
+        'Route management for correct navigation between views.',
+      ],
+    },
+    {
+      company: 'Alkemy',
+      position: 'React Developer',
+      time: 'Oct 2022 - Nov 2022',
+      description:
+        'Homebanking for Alkybank, a group project carried out to enhance the skills of the participants of the internship.',
+      task: [
+        'Homebaking developed using React and MaterialUI which contributed in an effective and attractive interface.',
+        'Redux architecture for clean and scalable global state management.',
+        'Testing of components with Jest.',
+        'User Authentication with JsonWebToken',
+      ],
+    },
+  ],
+  es: [
+    {
+      company: 'Distrisuper',
+      position: 'Desarrollador Frontend',
+      time: 'Ago 2022 - Presente',
+      description:
+        'Creación de paneles administrativos para la automatización de las tareas de los clientes.',
+      task: [
+        'Creación de tablas con filtros para agilizar las consultas de remitos y facturas desde el backend.',
+        'Manejo de rutas para una correcta navegación entre vistas',
+        'Context API para gestionar el estado global de forma sencilla y sin dependencias.',
+      ],
+    },
+    {
+      company: 'PerfectGift.ai',
+      position: 'Desarrollador Frontend',
+      time: 'Ene 2023 - Feb 2023',
+      description:
+        'Aplicación que ayuda al usuario a elegir un regalo mediante unas preguntas que se envían a una IA.',
+      task: [
+        'Creación del formulario para consultas AI. Y validaciones de los campos para garantizar el envío correcto del formulario.',
+        'Arquitectura Redux para una gestión de estados global, limpia y escalable.',
+        'Manejo de rutas para una correcta navegación entre vistas.',
+      ],
+    },
+    {
+      company: 'Alkemy',
+      position: 'React Developer',
+      time: 'Oct 2022 - Nov 2022',
+      description:
+        'Homebanking para Alkybank, un proyecto de grupo realizado para mejorar las competencias de los participantes en las prácticas.',
+      task: [
+        'Homebaking desarrollado utilizando React y MaterialUI que contribuyeron en una interfaz eficaz y atractiva.',
+        'Arquitectura Redux para una gestión de estados global, limpia y escalable.',
+        'Testing de componentes con Jest.',
+        'Autenticación de usuarios con JsonWebToken',
+      ],
+    },
+  ],
+};

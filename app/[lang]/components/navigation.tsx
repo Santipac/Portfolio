@@ -1,10 +1,16 @@
 'use client';
+import { navigation } from '@/constants/navigation';
+import { Locale } from '@/i18n-config';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react';
 
-export const Navigation: React.FC = () => {
+interface Props {
+  lang: Locale;
+}
+
+export const Navigation: React.FC<Props> = ({ lang }) => {
   const pathname = usePathname();
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
@@ -29,38 +35,17 @@ export const Navigation: React.FC = () => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-4 sm:p-6 mx-auto">
           <div className="flex justify-between gap-4 sm:gap-8">
-            <Link
-              href="/about"
-              className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
-                pathname === '/about' ? 'hidden' : 'flex'
-              }`}
-            >
-              About
-            </Link>
-            <Link
-              href="/experience"
-              className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
-                pathname === '/experience' ? 'hidden' : 'flex'
-              }`}
-            >
-              Experience
-            </Link>
-            <Link
-              href="/projects"
-              className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
-                pathname === '/projects' ? 'hidden' : 'flex'
-              }`}
-            >
-              Projects
-            </Link>
-            <Link
-              href="/contact"
-              className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
-                pathname === '/contact' ? 'hidden' : 'flex'
-              }`}
-            >
-              Contact
-            </Link>
+            {navigation[lang].map(nav => (
+              <Link
+                key={nav.name}
+                href={nav.href}
+                className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
+                  pathname === `/${lang}` + nav.href ? 'hidden' : 'flex'
+                }`}
+              >
+                {nav.name}
+              </Link>
+            ))}
           </div>
 
           <Link

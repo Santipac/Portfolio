@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
 import Particles from './components/particles';
-const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Experience', href: '/experience' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
-];
-export default function Home() {
+import { LangParams } from '@/interfaces';
+import { getTranslation } from '@/get-translation';
+import { navigation } from '@/constants/navigation';
+
+export default async function Home({ params: { lang } }: LangParams) {
+  const t = await getTranslation(lang);
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
-          {navigation.map(item => (
+          {navigation[lang].map(item => (
             <Link
               key={item.href}
               href={item.href}
@@ -34,11 +33,7 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-10 text-center animate-fade-in px-4">
-        <h2 className="text-sm text-zinc-500 ">
-          Hi, my name is Santiago, I&apos;m an Argentinian Frontend Developer
-          with Full-Stack knowledge.
-          <br />
-        </h2>
+        <h2 className="text-sm text-zinc-500 font-sans">{t.home.brief}</h2>
       </div>
     </div>
   );

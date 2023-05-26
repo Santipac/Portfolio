@@ -1,0 +1,20 @@
+{
+    "home": {
+        "brief": "Hola! Soy Santiago, un Desarrollador Frontend con conocimientos full-stack."
+    },
+    "about": {
+        "title": "Sobre mi",
+        "profession": "Desarrollador Frontend",
+        "imageAlt": "Foto de Santiago",
+        "firstParagraph": "Me apasiona todo sobre sobre tecnología e innovación. He trabajado utilizando metodologías ágiles en distintos ambientes de trabajo.",
+        "secondParagraph": "Actualmente estoy aprendiendo sobre tecnologías como tRPC, NextJS. Además estoy tomando un curso de UX / UI."
+    },
+    "experience": {
+        "title": "Experiencia"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "brief": "Algunos de los proyectos más importantes que hice o en los que estuve trabajando.",
+        "cta": "Leer más"
+    }
+}

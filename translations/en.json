@@ -1,0 +1,20 @@
+{
+    "home": {
+        "brief": "Hi, my name is Santiago, I'm Frontend Developer with Full-Stack knowledge."
+    },
+    "about": {
+        "title": "About me",
+        "profession": "Frontend Developer",
+        "imageAlt": "Picture of Santiago",
+        "firstParagraph": "I'm passionate about everything related to technology and innovation. I've worked using agile methodologies such as Scrum or Kanban in different work environments.",
+        "secondParagraph": "I'm currently learning about technologies such as tRPC, NextJS. Also I'm taking a course of UX / UI Design."
+    },
+    "experience": {
+        "title": "Experience"
+    },
+    "projects": {
+        "title": "Projects",
+        "brief": "Some of my most important or recent projects that I have been working on.",
+        "cta": "Read more"
+    }
+}

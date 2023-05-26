@@ -1,15 +1,18 @@
 import { Navigation } from '../components/navigation';
-import profile from '../../public/images/me.jpg';
+import profile from '../../../public/images/me.jpg';
 import Image from 'next/image';
+import { getTranslation } from '@/get-translation';
+import { LangParams } from '@/interfaces';
 
-export default async function AboutPage() {
+export default async function AboutPage({ params: { lang } }: LangParams) {
+  const t = await getTranslation(lang);
   return (
     <div className="relative pb-16">
-      <Navigation />
+      <Navigation lang={lang} />
       <div className="px-6 pt-24 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl">
-            About
+            {t.about.title}
           </h2>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -18,12 +21,12 @@ export default async function AboutPage() {
           <div className="flex justify-center md:justify-start min-w-fit">
             <Image
               src={profile}
-              alt="Image of myself"
+              alt={t.about.imageAlt}
               height={400}
               className="rounded-lg object-cover"
               quality={100}
               priority={true}
-              placeholder='blur'
+              placeholder="blur"
             />
           </div>
           <section className="flex flex-col space-y-6">
@@ -32,18 +35,15 @@ export default async function AboutPage() {
                 Santiago Pacini
               </h2>
               <h3 className="text-sm font-normal text-zinc-300 self-center md:self-start">
-                Frontend Developer
+                {t.about.profession}
               </h3>
             </article>
             <article className="flex flex-col space-y-2 w-full ">
               <p className="text-zinc-300 text-sm leading-7 text-center md:text-start">
-                I&apos;m passionate about everything related to technology and
-                innovation. I&apos;ve worked using agile methodologies such as
-                Scrum or Kanban in different work environments.
+                {t.about.firstParagraph}
               </p>
               <p className="text-zinc-300 text-sm leading-7 text-center md:text-start">
-                I&apos;m currently learning about technologies such as tRPC,
-                NextJS. Also I&apos;m taking a course of UX / UI Design.
+                {t.about.secondParagraph}
               </p>
             </article>
             <article className="flex flex-col space-y-2 w-full md:w-3/4">

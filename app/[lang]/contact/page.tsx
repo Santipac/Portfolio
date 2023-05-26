@@ -3,6 +3,7 @@ import { Github, Mail, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '../components/navigation';
 import { Card } from '../components/card';
+import { LangParams } from '@/interfaces';
 
 const socials = [
   {
@@ -25,10 +26,10 @@ const socials = [
   },
 ];
 
-export default function Example() {
+export default function ContactPage({ params: { lang } }: LangParams) {
   return (
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-      <Navigation />
+      <Navigation lang={lang} />
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 mb-6 lg:mt-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {socials.map((s, i) => (

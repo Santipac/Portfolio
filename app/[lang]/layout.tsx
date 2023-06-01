@@ -1,9 +1,9 @@
 import { i18n } from '@/i18n-config';
-import '../../globals.css';
-import { Inter } from '@next/font/google';
-import LocalFont from '@next/font/local';
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
+import { calSans, inter } from '../fonts';
 import favicon from '@/public/favicon.png';
+import og from '@/public/og.png';
+import '../../globals.css';
 export const metadata: Metadata = {
   title: 'Santiago Pacini | Portfolio',
   description: 'Desarrollador Frontend con conocimientos Full-Stack',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://santiagopacini.vercel.app/og.png',
+        url: og.src,
         width: 1920,
         height: 1080,
       },
@@ -35,15 +35,11 @@ export const metadata: Metadata = {
   icons: {
     shortcut: favicon.src,
   },
+  twitter: {
+		title: "Santiago Pacini",
+		card: "summary_large_image",
+	},
 };
-const calSans = LocalFont({
-  src: '../../public/fonts/CalSans-SemiBold.ttf',
-  variable: '--font-calsans',
-});
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }

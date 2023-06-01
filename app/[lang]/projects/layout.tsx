@@ -1,15 +1,8 @@
-import localFont from '@next/font/local';
-import { Inter } from '@next/font/google';
+
+import { calSans, inter } from '@/app/fonts';
 import { i18n } from '@/i18n-config';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
-const calSans = localFont({
-  src: '../../../public/fonts/CalSans-SemiBold.ttf',
-  variable: '--font-calsans',
-});
+
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }

@@ -33,7 +33,7 @@ export const projects: ProjectsContent = {
         'tRPC',
         'CockRoachDB',
       ],
-      url: 'https://cs-store-arg.vercel.app/',
+      url: 'https://csgostore.vercel.app/',
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {
@@ -105,7 +105,7 @@ export const projects: ProjectsContent = {
         'tRPC',
         'CockRoachDB',
       ],
-      url: 'https://cs-store-arg.vercel.app/',
+      url: 'https://csgostore.vercel.app/',
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {

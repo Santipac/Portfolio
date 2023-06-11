@@ -23,7 +23,7 @@ export const Navigation: React.FC<Props> = ({ lang }) => {
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
-  console.log(pathname);
+
   return (
     <header ref={ref}>
       <div

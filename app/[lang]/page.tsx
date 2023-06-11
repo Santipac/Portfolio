@@ -4,6 +4,7 @@ import Particles from './components/particles';
 import { LangParams } from '@/interfaces';
 import { getTranslation } from '@/get-translation';
 import { navigation } from '@/constants/navigation';
+import { calSans } from '../fonts';
 
 export default async function Home({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
@@ -27,7 +28,9 @@ export default async function Home({ params: { lang } }: LangParams) {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl whitespace-nowrap bg-clip-text ">
+      <h1
+        className={`z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl whitespace-nowrap bg-clip-text ${calSans.variable}`}
+      >
         Santiago Pacini
       </h1>
 

@@ -1,10 +1,10 @@
 import { i18n } from '@/i18n-config';
 import { Metadata } from 'next';
 import { calSans, inter } from '../fonts';
-import favicon from '@/public/favicon.png';
 import og from '@/public/og.png';
 import '../../globals.css';
 export const metadata: Metadata = {
+  metadataBase: new URL('https://santiagopacini.vercel.app'),
   title: 'Santiago Pacini | Portfolio',
   description: 'Desarrollador Frontend con conocimientos Full-Stack',
   openGraph: {
@@ -24,21 +24,28 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
-      follow: true,
+      follow: false,
+      noimageindex: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
-  icons: {
-    shortcut: favicon.src,
-  },
   twitter: {
-		title: "Santiago Pacini",
-		card: "summary_large_image",
-	},
+    title: 'Santiago Pacini',
+    card: 'summary_large_image',
+  },
+  alternates: {
+    canonical: 'https://santiagopacini.vercel.app',
+    languages: {
+      es: 'https://santiagopacini.vercel.app/es',
+      en: 'https://santiagopacini.vercel.app/en',
+    },
+  },
+  category: 'programming',
 };
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));

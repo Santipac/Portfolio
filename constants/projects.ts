@@ -14,7 +14,7 @@ export const projects: ProjectsContent = {
       slug: 'cs_store',
       title: 'CS Store',
       brief:
-        'The project is based on the sale of CSGO items. I opted to use the T3 STack focusing on simplicity, modularity and type-safe development.',
+        'The project is based on the sale of CSGO items. I opted to use the T3 Stack focusing on simplicity, modularity and type-safe development.',
       image: CS_Image,
       description:
         "The idea of developing this store was driven to learn about several technologies that I didn't know until the moment of making the application. I used the game as a niche to avoid making a typical clothing store, besides being one of my favorite games.",
@@ -86,7 +86,7 @@ export const projects: ProjectsContent = {
       slug: 'cs_store',
       title: 'CSGO Store',
       brief:
-        'Proyecto basado en la venta de items de CSGO. Opté por utilizar el T3 STack concentrandome en la simplicidad, modularidad y tipado.',
+        'Proyecto basado en la venta de items de CSGO. Opté por utilizar el T3 Stack concentrandome en la simplicidad, modularidad y tipado.',
       image: CS_Image,
       description:
         'La idea de desarrollar esta tienda fue impulsada para aprender sobre varias tecnologias que no conocia hasta el momento de realizar la aplicacion. ',

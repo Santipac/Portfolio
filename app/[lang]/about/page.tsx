@@ -51,19 +51,22 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
                 Stack
               </h3>
               <ul className="list-outside list-none flex gap-4 flex-wrap justify-center md:justify-start text-sm text-zinc-300">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
                 <li>ReactJS</li>
                 <li>NextJS</li>
                 <li>ReduxJS</li>
-                <li>NodeJS</li>
-                <li>ExpressJS</li>
                 <li>TailwindCSS</li>
                 <li>TypeScript</li>
+                <li>Zod</li>
                 <li>Prisma</li>
                 <li>tRPC</li>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>Firebase</li>
-                <li>Zod</li>
                 <li>Git</li>
                 <li>Figma</li>
               </ul>

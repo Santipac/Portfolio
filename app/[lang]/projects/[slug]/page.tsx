@@ -48,7 +48,14 @@ export default async function PostPage({ params }: Props) {
               ? 'Algunas de las tecnologías que utilice en este proyecto:'
               : 'Some of the technologies used in this project'}
           </p>
-          <div className="flex justify-center flex-wrap gap-4">
+          <ul className="p-0 m-0 list-none flex gap-4 flex-wrap text-sm text-zinc-300">
+            {project.stack.map(tec => (
+              <li key={tec} className=" text-zinc-800">
+                {tec}
+              </li>
+            ))}
+          </ul>
+          {/* <div className="flex justify-center flex-wrap gap-4">
             {project.stack.map(tec => (
               <span
                 key={tec}
@@ -57,7 +64,7 @@ export default async function PostPage({ params }: Props) {
                 {tec}
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
       </article>
     </div>

@@ -1,9 +1,9 @@
 export const experience = {
   en: [
     {
-      company: 'Distrisuper',
+      company: 'Aoki Tecnología & Negocios',
       position: 'Frontend Developer',
-      time: 'Aug 2022 - Present',
+      time: 'Aug 2022 - Jun 2023',
       description:
         'Creation of Admin Dashboards for the automation of customer tasks.',
       task: [
@@ -40,9 +40,9 @@ export const experience = {
   ],
   es: [
     {
-      company: 'Distrisuper',
+      company: 'Aoki Tecnología & Negocios',
       position: 'Desarrollador Frontend',
-      time: 'Ago 2022 - Presente',
+      time: 'Ago 2022 - Jun 2023',
       description:
         'Creación de paneles administrativos para la automatización de las tareas de los clientes.',
       task: [

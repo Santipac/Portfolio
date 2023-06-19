@@ -2,6 +2,7 @@ import { IProject } from '@/interfaces/projects';
 import CS_Image from '../public/images/Store_Image.png';
 import Twitter_Image from '../public/images/Twitter_Image.png';
 import Kanban_Image from '../public/images/Kanban_Image.png';
+import Tesla_Image from '../public/images/Tesla_Image.png';
 
 interface ProjectsContent {
   en: IProject[];
@@ -80,6 +81,17 @@ export const projects: ProjectsContent = {
       url: 'https://kanbanclone.vercel.app/',
       repository: 'https://github.com/Santipac/KanbanBoard',
     },
+    {
+      slug: 'tesla',
+      title: 'Tesla Landing',
+      brief: 'A Tesla UI clone with Astro JS',
+      image: Tesla_Image,
+      description:
+        'I did this project to refresh my knowledge in basic web development with HTML CSS and Javascript but with productivity enhancing technologies such as Tailwind for styles and Astro for the rest.',
+      stack: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'Astro JS'],
+      url: 'https://tesla-landing-ui.netlify.app/',
+      repository: 'https://github.com/Santipac/tesla-landing',
+    },
   ],
   es: [
     {
@@ -151,6 +163,17 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://kanbanclone.vercel.app/',
       repository: 'https://github.com/Santipac/KanbanBoard',
+    },
+    {
+      slug: 'tesla',
+      title: 'Tesla Landing',
+      brief: 'Landing Page de Tesla hecha con Astro JS',
+      image: Tesla_Image,
+      description:
+        'Realicé este proyecto para refrescar mi conocimiento en el desarrollo web básico con HTML CSS y Javascript pero con tecnologías que aumentan la productividad desarrollando como Tailwind para los estilos y Astro para el resto.',
+      stack: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'Astro JS'],
+      url: 'https://tesla-landing-ui.netlify.app/',
+      repository: 'https://github.com/Santipac/tesla-landing',
     },
   ],
 };

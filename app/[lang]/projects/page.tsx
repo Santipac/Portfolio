@@ -58,7 +58,15 @@ export default async function ProjectsPage({ params: { lang } }: LangParams) {
           </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
-
+        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+          {projects[lang].slice(3).map(project => (
+            <div key={project.slug} className="grid grid-cols-1 gap-4">
+              <Card>
+                <Article project={project} />
+              </Card>
+            </div>
+          ))}
+        </div>
         {/* <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
 					<div className="grid grid-cols-1 gap-4">
 						{sorted

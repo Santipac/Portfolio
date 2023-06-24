@@ -33,7 +33,7 @@ export const Navigation: React.FC<Props> = ({ lang }) => {
             : 'bg-zinc-900/500  border-zinc-800 '
         }`}
       >
-        <div className="container flex flex-row-reverse items-center justify-between p-4 sm:p-6 mx-auto">
+        <div className="flex flex-row-reverse items-center justify-between p-4 sm:p-6 max-w-7xl  mx-auto ">
           <div className="flex justify-between gap-4 sm:gap-8">
             {navigation[lang].map(nav => (
               <Link

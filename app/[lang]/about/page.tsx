@@ -10,11 +10,10 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
     <div className="relative pb-16">
       <Navigation lang={lang} />
       <div className="px-6 pt-24 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl">
-            {t.about.title}
-          </h2>
-        </div>
+        <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl">
+          {t.about.title}
+        </h2>
+
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0">

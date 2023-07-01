@@ -1,9 +1,21 @@
 export const experience = {
   en: [
     {
-      company: 'Aoki Tecnología & Negocios',
+      company: 'Comunyt',
+      position: 'React Developer',
+      time: 'Apr 2023 - Present',
+      description: "I worked on the creation of the company's landing page.",
+      task: [
+        'Creation of different views or sections of the page',
+        'Build the internationalization of the site.',
+        'API calls from a backoffice to bring the corresponding information.',
+        'Documentation and organization of tasks in Kanban board.',
+      ],
+    },
+    {
+      company: 'Aoki Technology & Business',
       position: 'Frontend Developer',
-      time: 'Aug 2022 - Jun 2023',
+      time: 'Aug 2022 - Mar 2023',
       description:
         'Creation of Admin Dashboards for the automation of customer tasks.',
       task: [
@@ -39,6 +51,19 @@ export const experience = {
     },
   ],
   es: [
+    {
+      company: 'Comunyt',
+      position: 'React Developer',
+      time: 'Abr 2023 - Presente',
+      description:
+        'Participé de forma activa en la creación de la Landing Page de la empresa',
+      task: [
+        'Creación de diferentes vistas o secciones de la página.',
+        'Creación del soporte multi-idioma o internacionalización de la página.',
+        'Consumo de API desde un backoffice para traer la información correspondiente.',
+        'Documentacion y organización de las tareas en tablero Kanban.',
+      ],
+    },
     {
       company: 'Aoki Tecnología & Negocios',
       position: 'Desarrollador Frontend',

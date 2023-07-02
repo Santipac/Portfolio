@@ -2,6 +2,8 @@ import { experience } from '@/constants/experience';
 import { Navigation } from '../components/navigation';
 import { LangParams } from '@/interfaces';
 import { getTranslation } from '@/get-translation';
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 export default async function ExperiencePage({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
   return (
@@ -40,6 +42,16 @@ export default async function ExperiencePage({ params: { lang } }: LangParams) {
                     <li key={task}>{task}</li>
                   ))}
                 </ul>
+                {exp.link !== null && (
+                  <Link
+                    href={exp.link}
+                    className="font-bold text-xl hover:text-sky-500 transition-colors underline flex text-zinc-200"
+                    target="_blank"
+                  >
+                    {t.experience.button}
+                    <ArrowUpRight className="h-5 w-5" />
+                  </Link>
+                )}
               </article>
               <div className="hidden w-full h-px md:block bg-zinc-800" />
             </>

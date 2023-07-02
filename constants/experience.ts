@@ -11,6 +11,7 @@ export const experience = {
         'API calls from a backoffice to bring the corresponding information.',
         'Documentation and organization of tasks in Kanban board.',
       ],
+      link: 'https://comunyt.com/',
     },
     {
       company: 'Aoki Technology & Business',
@@ -23,6 +24,7 @@ export const experience = {
         'Route management for correct navigation between views',
         ' Context API to manage the global state in a simple way and without dependencies.',
       ],
+      link: 'https://aokitech.com.ar/',
     },
     {
       company: 'PerfectGift.ai',
@@ -35,6 +37,7 @@ export const experience = {
         'Redux architecture for clean and scalable global state management.',
         'Route management for correct navigation between views.',
       ],
+      link: 'https://perfectgift.ai/',
     },
     {
       company: 'Alkemy',
@@ -48,6 +51,7 @@ export const experience = {
         'Testing of components with Jest.',
         'User Authentication with JsonWebToken',
       ],
+      link: null,
     },
   ],
   es: [
@@ -63,6 +67,7 @@ export const experience = {
         'Consumo de API desde un backoffice para traer la información correspondiente.',
         'Documentacion y organización de las tareas en tablero Kanban.',
       ],
+      link: 'https://comunyt.com/',
     },
     {
       company: 'Aoki Tecnología & Negocios',
@@ -75,6 +80,7 @@ export const experience = {
         'Manejo de rutas para una correcta navegación entre vistas',
         'Context API para gestionar el estado global de forma sencilla y sin dependencias.',
       ],
+      link: 'https://aokitech.com.ar/',
     },
     {
       company: 'PerfectGift.ai',
@@ -87,6 +93,7 @@ export const experience = {
         'Arquitectura Redux para una gestión de estados global, limpia y escalable.',
         'Manejo de rutas para una correcta navegación entre vistas.',
       ],
+      link: 'https://perfectgift.ai/',
     },
     {
       company: 'Alkemy',
@@ -100,6 +107,7 @@ export const experience = {
         'Testing de componentes con Jest.',
         'Autenticación de usuarios con JsonWebToken',
       ],
+      link: null,
     },
   ],
 };

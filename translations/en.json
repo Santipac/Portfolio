@@ -10,7 +10,8 @@
         "secondParagraph": "I'm currently learning SQL. Also I'm taking a course of Data Structures and Algorithms with JavaScript."
     },
     "experience": {
-        "title": "Experience"
+        "title": "Experience",
+        "button": "Visit Website"
     },
     "projects": {
         "title": "Projects",

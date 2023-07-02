@@ -10,7 +10,8 @@
         "secondParagraph": "Actualmente estoy aprendiendo SQL con PostgreSQL. Además estoy tomando un curso de Estructuras de Datos y Algoritmos."
     },
     "experience": {
-        "title": "Experiencia"
+        "title": "Experiencia",
+        "button": "Visitar Web"
     },
     "projects": {
         "title": "Proyectos",

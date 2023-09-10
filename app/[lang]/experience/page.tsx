@@ -42,7 +42,7 @@ export default async function ExperiencePage({ params: { lang } }: LangParams) {
                     <li key={task}>{task}</li>
                   ))}
                 </ul>
-                {exp.link !== null && (
+                {exp.link && (
                   <Link
                     href={exp.link}
                     className="font-bold text-xl hover:text-sky-500 transition-colors underline flex text-zinc-200"

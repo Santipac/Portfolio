@@ -1,9 +1,16 @@
 export const experience = {
   en: [
     {
+      company: 'Educabot',
+      position: 'Frontend Developer',
+      time: 'Jul 2023 - Present',
+      description: 'Participation in different parts of the application suite for web and mobile platforms using agile methodologies and good practices.',
+      task: ['Creation and implementation of new features', 'Report and fix bugs', 'Review code from other devs.'],
+    },
+    {
       company: 'Comunyt',
       position: 'React Developer',
-      time: 'Apr 2023 - Present',
+      time: 'Apr 2023 - Jul 2023',
       description: "I worked on the creation of the company's landing page.",
       task: [
         'Creation of different views or sections of the page',
@@ -56,9 +63,17 @@ export const experience = {
   ],
   es: [
     {
+      company: 'Educabot',
+      position: 'Desarrollador Frontend',
+      time: 'Jul 2023 - Presente',
+      description: 'Participación en distintas partes de la suite de aplicaciones para las plataformas web y mobile utilizando metodologías ágiles y buenas prácticas.',
+      task: ['Creación e implementación de nuevas features utlizando buenas prácticas', 'Reportar y corregir bugs', ' Revisar código de otros devs'],
+      link: 'https://educabot.com/',
+    },
+    {
       company: 'Comunyt',
       position: 'React Developer',
-      time: 'Abr 2023 - Presente',
+      time: 'Abr 2023 - Jul 2023',
       description:
         'Participé de forma activa en la creación de la Landing Page de la empresa',
       task: [

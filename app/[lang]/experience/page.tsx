@@ -4,6 +4,7 @@ import { LangParams } from '@/interfaces';
 import { getTranslation } from '@/get-translation';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 export default async function ExperiencePage({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
   return (
@@ -16,14 +17,17 @@ export default async function ExperiencePage({ params: { lang } }: LangParams) {
 
         <div className="w-full h-px bg-zinc-800" />
 
-        <section className="flex flex-col space-y-8 md:space-y-16">
+        <section className="flex flex-col space-y-12 md:space-y-16">
           {experience[lang].map(exp => (
             <>
               <article className="flex flex-col space-y-4" key={exp.company}>
-                <div className="flex flex-col space-y-2">
+                <div className="flex flex-col space-y-4">
+                <div className='flex items-end gap-4'>
+                <Image src={exp.logo} alt={`logo of ${exp.company}`} width={40} height={40} className='rounded object-contain' />
                   <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
                     {exp.company}
                   </h2>
+                </div>
                   <div className="flex justify-between items-center">
                     <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
                       {exp.position}

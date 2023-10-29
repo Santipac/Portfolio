@@ -1,12 +1,23 @@
+import educabot from '@/public/images/educabot_logo.jpg';
+import alkemy from '@/public/images/alkemy_logo.jpg';
+import comunyt from '@/public/images/comunyt_logo.jpg';
+import aoki from '@/public/images/aoki_logo.jpg';
+
 export const experience = {
   en: [
     {
       company: 'Educabot',
       position: 'Frontend Developer',
       time: 'Jul 2023 - Present',
-      description: 'Participation in different parts of the application suite for web and mobile platforms.',
-      task: ['Creation and implementation of new features', 'Report and fix bugs', 'Review code from other devs.'],
+      description:
+        'Participation in different parts of the application suite for web and mobile platforms.',
+      task: [
+        'Creation and implementation of new features',
+        'Report and fix bugs',
+        'Review code from other devs.',
+      ],
       link: 'https://educabot.com/',
+      logo: educabot,
     },
     {
       company: 'Comunyt',
@@ -20,9 +31,10 @@ export const experience = {
         'Documentation and organization of tasks in Kanban board.',
       ],
       link: 'https://comunyt.com/',
+      logo: comunyt,
     },
     {
-      company: 'Aoki Technology & Business',
+      company: 'Aoki Technology',
       position: 'Frontend Developer',
       time: 'Aug 2022 - Mar 2023',
       description:
@@ -33,19 +45,7 @@ export const experience = {
         ' Context API to manage the global state in a simple way and without dependencies.',
       ],
       link: 'https://aokitech.com.ar/',
-    },
-    {
-      company: 'PerfectGift.ai',
-      position: 'Frontend Developer',
-      time: 'Jan 2023 - Feb 2023',
-      description:
-        'Application that helps the user to choose a gift through prompts that are sent to an AI.',
-      task: [
-        'Creation of the form for AI queries. And validations of the fields to ensure the correct submission of the form.',
-        'Redux architecture for clean and scalable global state management.',
-        'Route management for correct navigation between views.',
-      ],
-      link: 'https://perfectgift.ai/',
+      logo: aoki,
     },
     {
       company: 'Alkemy',
@@ -60,6 +60,7 @@ export const experience = {
         'User Authentication with JsonWebToken',
       ],
       link: null,
+      logo: alkemy,
     },
   ],
   es: [
@@ -67,9 +68,15 @@ export const experience = {
       company: 'Educabot',
       position: 'Desarrollador Frontend',
       time: 'Jul 2023 - Presente',
-      description: 'Participación en distintas partes de la suite de aplicaciones para las plataformas web y mobile.',
-      task: ['Creación e implementación de nuevas features utlizando buenas prácticas', 'Reportar y corregir bugs', ' Revisar código de otros devs'],
+      description:
+        'Participación en distintas partes de la suite de aplicaciones para las plataformas web y mobile.',
+      task: [
+        'Creación e implementación de nuevas features utlizando buenas prácticas',
+        'Reportar y corregir bugs',
+        ' Revisar código de otros devs',
+      ],
       link: 'https://educabot.com/',
+      logo: educabot,
     },
     {
       company: 'Comunyt',
@@ -84,9 +91,10 @@ export const experience = {
         'Documentacion y organización de las tareas en tablero Kanban.',
       ],
       link: 'https://comunyt.com/',
+      logo: comunyt,
     },
     {
-      company: 'Aoki Tecnología & Negocios',
+      company: 'Aoki Tecnología',
       position: 'Desarrollador Frontend',
       time: 'Ago 2022 - Jun 2023',
       description:
@@ -97,19 +105,7 @@ export const experience = {
         'Context API para gestionar el estado global de forma sencilla y sin dependencias.',
       ],
       link: 'https://aokitech.com.ar/',
-    },
-    {
-      company: 'PerfectGift.ai',
-      position: 'Desarrollador Frontend',
-      time: 'Ene 2023 - Feb 2023',
-      description:
-        'Aplicación que ayuda al usuario a elegir un regalo mediante unas preguntas que se envían a una IA.',
-      task: [
-        'Creación del formulario para consultas AI. Y validaciones de los campos para garantizar el envío correcto del formulario.',
-        'Arquitectura Redux para una gestión de estados global, limpia y escalable.',
-        'Manejo de rutas para una correcta navegación entre vistas.',
-      ],
-      link: 'https://perfectgift.ai/',
+      logo: aoki,
     },
     {
       company: 'Alkemy',
@@ -124,6 +120,7 @@ export const experience = {
         'Autenticación de usuarios con JsonWebToken',
       ],
       link: null,
+      logo: alkemy,
     },
   ],
 };

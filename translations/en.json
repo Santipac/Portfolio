@@ -6,8 +6,8 @@
         "title": "About me",
         "profession": "Frontend Developer",
         "imageAlt": "Picture of Santiago",
-        "firstParagraph": "I'm passionate about everything related to technology and innovation. I've worked using agile methodologies such as Scrum or Kanban in different work environments.",
-        "secondParagraph": "I'm currently learning SQL. Also I'm taking a course of Data Structures and Algorithms with JavaScript."
+        "firstParagraph": "Frontend developer with extensive experience in React, I also have knowledge in fullstack development. I'm passionate about everything about technology and innovation.",
+        "secondParagraph": "I work daily using agile methodologies such as Scrum and Kanban. I'm currently learning React Native, and implementing best practices for a cleaner and more scalable frontend."
     },
     "experience": {
         "title": "Experience",

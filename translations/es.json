@@ -1,13 +1,13 @@
 {
     "home": {
-        "brief": "Hola! Soy Santiago, un Desarrollador Frontend con conocimientos full-stack."
+        "brief": "Hola! Soy Santiago, un Desarrollador Frontend con conocimientos Full-Stack."
     },
     "about": {
         "title": "Sobre mi",
         "profession": "Desarrollador Frontend",
         "imageAlt": "Foto de Santiago",
-        "firstParagraph": "Me apasiona todo sobre sobre tecnología e innovación. He trabajado utilizando metodologías ágiles en distintos ambientes de trabajo.",
-        "secondParagraph": "Actualmente estoy aprendiendo SQL con PostgreSQL. Además estoy tomando un curso de Estructuras de Datos y Algoritmos."
+        "firstParagraph": "Desarrollador Frontend con amplia experiencia en React. También tengo conocimientos en desarrollo fullstack. Me apasiona todo sobre sobre tecnología e innovación.",
+        "secondParagraph": "Trabajo cotidianamente utilizando metodologías ágiles como Scrum y Kanban. Actualmente me encuentro aprendiendo React Native, e implementando buenas practicas para un frontend mas limpio y escalable."
     },
     "experience": {
         "title": "Experiencia",

@@ -56,15 +56,15 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
                 <li>ReactJS</li>
                 <li>NextJS</li>
                 <li>ReduxJS</li>
+                <li>Zustand</li>
                 <li>TailwindCSS</li>
+                <li>JavaScript</li>
                 <li>TypeScript</li>
+                <li>React Query</li>
                 <li>Zod</li>
                 <li>Prisma</li>
                 <li>tRPC</li>
                 <li>NodeJS</li>
-                <li>ExpressJS</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
                 <li>Firebase</li>
                 <li>Git</li>
                 <li>Figma</li>

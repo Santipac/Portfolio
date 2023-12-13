@@ -59,7 +59,6 @@ export const projects: ProjectsContent = {
         'PrismaORM',
         'Stripe',
       ],
-      url: 'https://twitter-clone-santipac.vercel.app/',
       repository: 'https://github.com/Santipac/twitter-clone',
     },
     {
@@ -164,7 +163,6 @@ export const projects: ProjectsContent = {
         'PrismaORM',
         'Stripe',
       ],
-      url: 'https://twitter-clone-santipac.vercel.app/',
       repository: 'https://github.com/Santipac/twitter-clone',
     },
     {

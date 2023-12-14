@@ -4,6 +4,7 @@ import Twitter_Image from '../public/images/Twitter_Image.png';
 import Kanban_Image from '../public/images/Kanban_Image.png';
 import Tesla_Image from '../public/images/Tesla_Image.png';
 import Dolarizapp_Image from '../public/images/Dolarizapp_Image.png';
+import CloutyShop_Image from '../public/images/clouty_Image.png';
 
 interface ProjectsContent {
   en: IProject[];
@@ -39,28 +40,28 @@ export const projects: ProjectsContent = {
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {
-      slug: 'twitter_clone',
-      title: 'Twitter UI',
-      brief:
-        'Twitter UI Clone with minimal functionalities such as follow users, create tweets and more.',
-      image: Twitter_Image,
+      slug: 'clouty-shop',
+      title: 'Clouty Shop',
+      brief: 'Clothing e-commerce using modern technologies.',
+      image: CloutyShop_Image,
       description:
-        'I made this project in order to learn more about technologies such as Radix UI, tRPC, react-query, and others. I liked the idea of making a Twitter Clone because I could understand how these technologies work by making minimal functionalities.',
+        'The main idea of this project was to learn the basics of Next.JS complemented with other technologies and tools. It has a database to store products. Fully functional API using Next and MongoDB. Docker was used to use MongoDB locally without creating a production-ready database, and finally, Material UI was used for its simplicity in styling. These are some of the most important technologies I used.',
       stack: [
         'NextJS',
-        'tRPC',
-        'React Query',
-        'TailwindCSS',
-        'Zod',
-        'TypeScript',
-        'Radix UI',
+        'Material UI',
+        'Docker',
+        'Mongoose',
+        'MongoDB',
+        'Paypal SDK',
         'Next Auth',
-        'MySQL',
-        'PrismaORM',
-        'Stripe',
+        'Node JS',
+        'API Context',
+        'JsonWebToken',
+        'SWR',
       ],
-      repository: 'https://github.com/Santipac/twitter-clone',
+      repository: 'https://github.com/Santipac/Clouty-Ecommerce',
     },
+
     {
       slug: 'kanban_board',
       title: 'Kanban Board',
@@ -114,6 +115,29 @@ export const projects: ProjectsContent = {
       url: 'https://tesla-landing-ui.netlify.app/',
       repository: 'https://github.com/Santipac/tesla-landing',
     },
+    {
+      slug: 'twitter_clone',
+      title: 'Twitter UI',
+      brief:
+        'Twitter UI Clone with minimal functionalities such as follow users, create tweets and more.',
+      image: Twitter_Image,
+      description:
+        'I made this project in order to learn more about technologies such as Radix UI, tRPC, react-query, and others. I liked the idea of making a Twitter Clone because I could understand how these technologies work by making minimal functionalities.',
+      stack: [
+        'NextJS',
+        'tRPC',
+        'React Query',
+        'TailwindCSS',
+        'Zod',
+        'TypeScript',
+        'Radix UI',
+        'Next Auth',
+        'MySQL',
+        'PrismaORM',
+        'Stripe',
+      ],
+      repository: 'https://github.com/Santipac/twitter-clone',
+    },
   ],
   es: [
     {
@@ -143,28 +167,28 @@ export const projects: ProjectsContent = {
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {
-      slug: 'twitter_clone',
-      title: 'Twitter UI',
-      brief:
-        'Clon de Twitter con funcionalidades minimas como seguir usuarios, crear tweets y más.',
-      image: Twitter_Image,
+      slug: 'clouty-shop',
+      title: 'Clouty Shop',
+      brief: 'Ecommerce de ropa utilizando tecnologías modernas.',
+      image: CloutyShop_Image,
       description:
-        'Hice este proyecto para aprender más sobre tecnologías como Radix UI, tRPC, react-query, y otras. Me gustó la idea de hacer un clon de Twitter porque podía entender cómo funcionan estas tecnologías haciendo funcionalidades mínimas.',
+        'La idea principal de este proyecto fue aprender las bases de Next.JS complementando con otras tecnologías y herramientas. Posee base de datos para almacenar los productos. API totalmente funcionar utilizando Next y MongoDB. Se utilizó docker para poder usar MongoDB de forma local sin crear una base de datos lista para producción, y por último se utilizo Material UI por la simplicidad para crear estilos. Éstas son algunas de las tecnologías mas importantes que utilicé.',
       stack: [
         'NextJS',
-        'tRPC',
-        'React Query',
-        'TailwindCSS',
-        'Zod',
-        'TypeScript',
-        'Radix UI',
+        'Material UI',
+        'Docker',
+        'Mongoose',
+        'MongoDB',
+        'Paypal SDK',
         'Next Auth',
-        'MySQL',
-        'PrismaORM',
-        'Stripe',
+        'Node JS',
+        'API Context',
+        'JsonWebToken',
+        'SWR',
       ],
-      repository: 'https://github.com/Santipac/twitter-clone',
+      repository: 'https://github.com/Santipac/Clouty-Ecommerce',
     },
+
     {
       slug: 'kanban_board',
       title: 'Kanban Board',
@@ -217,6 +241,29 @@ export const projects: ProjectsContent = {
       stack: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'Astro JS'],
       url: 'https://tesla-landing-ui.netlify.app/',
       repository: 'https://github.com/Santipac/tesla-landing',
+    },
+    {
+      slug: 'twitter_clone',
+      title: 'Twitter UI',
+      brief:
+        'Clon de Twitter con funcionalidades minimas como seguir usuarios, crear tweets y más.',
+      image: Twitter_Image,
+      description:
+        'Hice este proyecto para aprender más sobre tecnologías como Radix UI, tRPC, react-query, y otras. Me gustó la idea de hacer un clon de Twitter porque podía entender cómo funcionan estas tecnologías haciendo funcionalidades mínimas.',
+      stack: [
+        'NextJS',
+        'tRPC',
+        'React Query',
+        'TailwindCSS',
+        'Zod',
+        'TypeScript',
+        'Radix UI',
+        'Next Auth',
+        'MySQL',
+        'PrismaORM',
+        'Stripe',
+      ],
+      repository: 'https://github.com/Santipac/twitter-clone',
     },
   ],
 };

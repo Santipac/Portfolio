@@ -54,6 +54,7 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
                 <li>CSS</li>
                 <li>SASS</li>
                 <li>ReactJS</li>
+                <li>AstroJS</li>
                 <li>NextJS</li>
                 <li>ReduxJS</li>
                 <li>Zustand</li>
@@ -61,11 +62,11 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React Query</li>
-                <li>Zod</li>
+                <li>Material UI</li>
                 <li>Prisma</li>
                 <li>tRPC</li>
                 <li>NodeJS</li>
-                <li>Firebase</li>
+                <li>NestJS</li>
                 <li>Git</li>
                 <li>Figma</li>
               </ul>

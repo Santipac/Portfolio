@@ -6,8 +6,8 @@
         "title": "Sobre mi",
         "profession": "Desarrollador Frontend",
         "imageAlt": "Foto de Santiago",
-        "firstParagraph": "Desarrollador Frontend con amplia experiencia en React. También tengo conocimientos en desarrollo fullstack. Me apasiona todo sobre sobre tecnología e innovación.",
-        "secondParagraph": "Trabajo cotidianamente utilizando metodologías ágiles como Scrum y Kanban. Actualmente me encuentro aprendiendo React Native, e implementando buenas practicas para un frontend mas limpio y escalable."
+        "firstParagraph": "Desarrollador Frontend con amplia experiencia en React. También tengo conocimientos en desarrollo fullstack. Me apasiona todo sobre tecnología e innovación.",
+        "secondParagraph": "Trabajo cotidianamente utilizando metodologías ágiles como Scrum y Kanban. Actualmente me encuentro aprendiendo React Native e implementando buenas prácticas para un frontend mas limpio y escalable."
     },
     "experience": {
         "title": "Experiencia",

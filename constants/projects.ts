@@ -60,7 +60,7 @@ export const projects: ProjectsContent = {
     },
     {
       slug: 'dolarizapp-web',
-      title: 'Dolarizapp (Web)',
+      title: 'Dolarizapp (web)',
       brief: 'A Webapp to convert ARS to USD',
       image: Dolarizapp_Image,
       description:

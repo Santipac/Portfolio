@@ -4,6 +4,7 @@ import Twitter_Image from '../public/images/Twitter_Image.png';
 import Kanban_Image from '../public/images/Kanban_Image.png';
 import Tesla_Image from '../public/images/Tesla_Image.png';
 import Dolarizapp_Image from '../public/images/Dolarizapp_Image.png';
+import Dolarizapp_Mobile from '../public/images/Dolarizapp_mobile.png';
 import CloutyShop_Image from '../public/images/clouty_Image.png';
 
 interface ProjectsContent {
@@ -40,6 +41,46 @@ export const projects: ProjectsContent = {
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {
+      slug: 'dolarizapp-mobile',
+      title: 'Dolarizapp',
+      brief:
+        'A mobile application where you can consult, convert and save your conversions.',
+      image: Dolarizapp_Mobile,
+      description:
+        "An app where you will find the most important quotes that thousands of people use every day. You can also convert your dollars or pesos and see the value with the different quotes. And finally, a history where you can save the quotes you don't want to lose. Not yet available in stores (coming soon). ",
+      stack: [
+        'React Native',
+        'Typescript',
+        'Zustand',
+        'React Query',
+        'Expo SDK',
+        'Figma',
+      ],
+      repository: 'https://github.com/Santipac/dolarizapp',
+    },
+    {
+      slug: 'dolarizapp-web',
+      title: 'Dolarizapp (Web)',
+      brief: 'A Webapp to convert ARS to USD',
+      image: Dolarizapp_Image,
+      description:
+        'A webapp where you will find different quotes with information about them. Designed only for Argentines, those who suffer every day by the devaluation of our currency. You can insert the amount you want, seeing its value in dollars with the different quotes. Some quotes have additional information about them.',
+      stack: [
+        'React js',
+        'Typescript',
+        'TailwindCSS',
+        'Framer Motion',
+        'React Query',
+        'Storybook',
+        'Vite js',
+        'pnpm',
+        'React Router Dom',
+        'Figma',
+      ],
+      url: 'https://dolarizapp.vercel.app/',
+      repository: 'https://github.com/Santipac/dolarizapp-web',
+    },
+    {
       slug: 'clouty-shop',
       title: 'Clouty Shop',
       brief: 'Clothing e-commerce using modern technologies.',
@@ -61,7 +102,6 @@ export const projects: ProjectsContent = {
       ],
       repository: 'https://github.com/Santipac/Clouty-Ecommerce',
     },
-
     {
       slug: 'kanban_board',
       title: 'Kanban Board',
@@ -81,28 +121,6 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://kanbanclone.vercel.app/',
       repository: 'https://github.com/Santipac/KanbanBoard',
-    },
-    {
-      slug: 'dolarizapp',
-      title: 'Dolarizapp',
-      brief: 'An App to convert ARS to USD',
-      image: Dolarizapp_Image,
-      description:
-        'An app where you will find different quotes with information about them. Designed only for Argentines, those who suffer every day by the devaluation of our currency. You can insert the amount you want, seeing its value in dollars with the different quotes. Some quotes have additional information about them.',
-      stack: [
-        'React js',
-        'Typescript',
-        'TailwindCSS',
-        'Framer Motion',
-        'React Query',
-        'Storybook',
-        'Vite js',
-        'pnpm',
-        'React Router Dom',
-        'Figma',
-      ],
-      url: 'https://dolarizapp.vercel.app/',
-      repository: 'https://github.com/Santipac/Dolarizapp',
     },
     {
       slug: 'tesla',
@@ -167,6 +185,45 @@ export const projects: ProjectsContent = {
       repository: 'https://github.com/Santipac/CS-Store',
     },
     {
+      slug: 'dolarizapp-mobile',
+      title: 'Dolarizapp',
+      brief:
+        'Una app donde consultar, convertir y guardar distintas cotizaciones.',
+      image: Dolarizapp_Mobile,
+      description:
+        'Una app donde encontrarás las cotizaciones más importantes que miles de personas utilizan día a día. También puedes convertir tus dólares o pesos y ver el valor con las diferentes cotizaciones. Y por último, un historial donde guardar las cotizaciones que no quieres perder. Aún no está disponible en las tiendas (estará pronto).',
+      stack: [
+        'React Native',
+        'Typescript',
+        'Zustand',
+        'React Query',
+        'Expo SDK',
+        'Figma',
+      ],
+      repository: 'https://github.com/Santipac/dolarizapp',
+    },
+    {
+      slug: 'dolarizapp-web',
+      title: 'Dolarizapp (web)',
+      brief: 'Una webapp donde convertir tus pesos a dólares.',
+      image: Dolarizapp_Image,
+      description:
+        'Una webapp donde encontrarás distintas cotizaciones con información de las mismas Pensada unicamente para los Argentinos, los que sufrimos todos los días por la devaluación de nuestra moneda. Podes insertar el monto que quieras, viendo su valor en dolares con las distintas cotizaciones. Algunas cotizaciones poseen información adicional sobre ellas.',
+      stack: [
+        'React js',
+        'Typescript',
+        'TailwindCSS',
+        'Framer Motion',
+        'React Query',
+        'Vite js',
+        'pnpm',
+        'React Router Dom',
+        'Figma',
+      ],
+      url: 'https://dolarizapp.vercel.app/',
+      repository: 'https://github.com/Santipac/dolarizapp-web',
+    },
+    {
       slug: 'clouty-shop',
       title: 'Clouty Shop',
       brief: 'Ecommerce de ropa utilizando tecnologías modernas.',
@@ -188,7 +245,6 @@ export const projects: ProjectsContent = {
       ],
       repository: 'https://github.com/Santipac/Clouty-Ecommerce',
     },
-
     {
       slug: 'kanban_board',
       title: 'Kanban Board',
@@ -208,28 +264,6 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://kanbanclone.vercel.app/',
       repository: 'https://github.com/Santipac/KanbanBoard',
-    },
-    {
-      slug: 'dolarizapp',
-      title: 'Dolarizapp',
-      brief: 'Una app donde convertir tus pesos a dólares.',
-      image: Dolarizapp_Image,
-      description:
-        'Una app donde encontrarás distintas cotizaciones con información de las mismas Pensada unicamente para los Argentinos, los que sufrimos todos los días por la devaluación de nuestra moneda. Podes insertar el monto que quieras, viendo su valor en dolares con las distintas cotizaciones. Algunas cotizaciones poseen información adicional sobre ellas.',
-      stack: [
-        'React js',
-        'Typescript',
-        'TailwindCSS',
-        'Framer Motion',
-        'React Query',
-        'Storybook',
-        'Vite js',
-        'pnpm',
-        'React Router Dom',
-        'Figma',
-      ],
-      url: 'https://dolarizapp.vercel.app/',
-      repository: 'https://github.com/Santipac/Dolarizapp',
     },
     {
       slug: 'tesla',

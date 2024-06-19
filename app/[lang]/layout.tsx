@@ -1,6 +1,8 @@
 import { i18n } from '@/i18n-config';
 import { Metadata } from 'next';
 import { calSans, inter } from '../fonts';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import og from '@/public/og.png';
 import '../../globals.css';
 export const metadata: Metadata = {
@@ -63,6 +65,7 @@ export default function RootLayout({
       lang={params.lang}
       className={[inter.variable, calSans.variable].join(' ')}
     >
+      <SpeedInsights />
       <body className={inter.className}>{children}</body>
     </html>
   );

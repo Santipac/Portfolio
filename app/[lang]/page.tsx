@@ -11,12 +11,12 @@ export default async function Home({ params: { lang } }: LangParams) {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex items-center justify-center gap-4 max-[375px]:gap-2">
           {navigation[lang].map(item => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="max-[375px]:text-sm  text-md duration-500 text-zinc-400 hover:text-zinc-400"
             >
               {item.name}
             </Link>
@@ -36,7 +36,7 @@ export default async function Home({ params: { lang } }: LangParams) {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-10 text-center animate-fade-in px-4">
-        <h2 className="text-sm text-zinc-500 font-sans">{t.home.brief}</h2>
+        <h2 className="text-sm text-zinc-400 font-sans">{t.home.brief}</h2>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { navigation } from '@/constants/navigation';
 import { Locale } from '@/i18n-config';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react';
 
 interface Props {
@@ -12,6 +12,7 @@ interface Props {
 
 export const Navigation: React.FC<Props> = ({ lang }) => {
   const pathname = usePathname();
+  const router = useRouter();
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
   useEffect(() => {
@@ -39,7 +40,7 @@ export const Navigation: React.FC<Props> = ({ lang }) => {
               <Link
                 key={nav.name}
                 href={nav.href}
-                className={`duration-200 text-zinc-400 hover:text-zinc-100 ${
+                className={`max-[375px]:text-sm  duration-200 text-zinc-400 hover:text-zinc-100 ${
                   pathname === `/${lang}` + nav.href ? 'hidden' : 'flex'
                 }`}
               >
@@ -47,13 +48,13 @@ export const Navigation: React.FC<Props> = ({ lang }) => {
               </Link>
             ))}
           </div>
-
-          <Link
-            href="/"
+          <button
+            type="button"
             className="duration-200 text-zinc-300 hover:text-zinc-100"
+            onClick={() => router.back()}
           >
             <ArrowLeft className="w-6 h-6 " />
-          </Link>
+          </button>
         </div>
       </div>
     </header>

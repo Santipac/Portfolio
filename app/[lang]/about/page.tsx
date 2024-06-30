@@ -9,7 +9,7 @@ export default async function AboutPage({ params: { lang } }: LangParams) {
   return (
     <div className="relative pb-16">
       <Navigation lang={lang} />
-      <div className="px-6 pt-24 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-24 mx-auto space-y-8 max-w-5xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl">
           {t.about.title}
         </h2>

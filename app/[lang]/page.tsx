@@ -5,6 +5,7 @@ import { LangParams } from '@/interfaces';
 import { getTranslation } from '@/get-translation';
 import { navigation } from '@/constants/navigation';
 import { calSans } from '../fonts';
+import { cn } from '@/util/classNames';
 
 export default async function Home({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
@@ -12,15 +13,20 @@ export default async function Home({ params: { lang } }: LangParams) {
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4 max-[375px]:gap-2">
-          {navigation[lang].map(item => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="max-[375px]:text-sm  text-md duration-500 text-zinc-400 hover:text-zinc-400"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navigation[lang].map(item => {
+            if (item.href === '/') return;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  'max-[375px]:text-sm  text-md duration-500 text-zinc-400 hover:text-zinc-400'
+                )}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </ul>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />

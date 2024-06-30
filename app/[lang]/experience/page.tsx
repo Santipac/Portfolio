@@ -10,7 +10,7 @@ export default async function ExperiencePage({ params: { lang } }: LangParams) {
   return (
     <div className="relative pb-16">
       <Navigation lang={lang} />
-      <div className="px-6 pt-24 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-24 mx-auto space-y-8 max-w-5xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
           {t.experience.title}
         </h2>
@@ -22,12 +22,18 @@ export default async function ExperiencePage({ params: { lang } }: LangParams) {
             <>
               <article className="flex flex-col space-y-4" key={exp.company}>
                 <div className="flex flex-col space-y-4">
-                <div className='flex items-end gap-4'>
-                <Image src={exp.logo} alt={`logo of ${exp.company}`} width={40} height={40} className='rounded object-contain' />
-                  <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                    {exp.company}
-                  </h2>
-                </div>
+                  <div className="flex items-end gap-4">
+                    <Image
+                      src={exp.logo}
+                      alt={`logo of ${exp.company}`}
+                      width={40}
+                      height={40}
+                      className="rounded object-contain"
+                    />
+                    <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                      {exp.company}
+                    </h2>
+                  </div>
                   <div className="flex justify-between items-center">
                     <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
                       {exp.position}

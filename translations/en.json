@@ -1,21 +1,30 @@
 {
-    "home": {
-        "brief": "Hi, my name is Santiago, I'm Frontend Developer with Full-Stack knowledge."
-    },
-    "about": {
-        "title": "About me",
-        "profession": "Frontend Developer",
-        "imageAlt": "Picture of Santiago",
-        "firstParagraph": "Frontend developer with extensive experience in React, I also have knowledge in fullstack development. I'm passionate about everything about technology and innovation.",
-        "secondParagraph": "I work daily using agile methodologies such as Scrum and Kanban. I'm currently learning React Native and implementing best practices for a cleaner and more scalable frontend."
-    },
-    "experience": {
-        "title": "Experience",
-        "button": "Visit Website"
-    },
-    "projects": {
-        "title": "Projects",
-        "brief": "Some of my most important or recent projects that I have been working on.",
-        "cta": "Read more"
-    }
+  "links": {
+    "about": "About me",
+    "resume": "Resume",
+    "experience": "Experience",
+    "projects": "Projects",
+    "services": "Services",
+    "skills": "Skills",
+    "certifications": "Certifications"
+  },
+  "home": {
+    "brief": "Hi, my name is Santiago, I'm Frontend Developer with Full-Stack knowledge."
+  },
+  "about": {
+    "title": "About me",
+    "profession": "Frontend Developer",
+    "imageAlt": "Picture of Santiago",
+    "firstParagraph": "I'm a frontend developer with +2 years of experience dedicated to helping different companies achieve their goals through the building or improvement of applications/websites. I've extensive knowledge of the React ecosystem on the client side.",
+    "secondParagraph": "I can also create highly scalable and robust backend applications using technologies like NodeJS or NestJS."
+  },
+  "experience": {
+    "title": "Experience",
+    "button": "Visit Website"
+  },
+  "projects": {
+    "title": "Projects",
+    "brief": "Some of my most important or recent projects that I have been working on.",
+    "cta": "Read more"
+  }
 }

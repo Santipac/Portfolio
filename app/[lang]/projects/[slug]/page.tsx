@@ -55,16 +55,6 @@ export default async function PostPage({ params }: Props) {
               </li>
             ))}
           </ul>
-          {/* <div className="flex justify-center flex-wrap gap-4">
-            {project.stack.map(tec => (
-              <span
-                key={tec}
-                className="bg-zinc-100 text-zinc-800 px-4 py-1 rounded-full"
-              >
-                {tec}
-              </span>
-            ))}
-          </div> */}
         </div>
       </article>
     </div>

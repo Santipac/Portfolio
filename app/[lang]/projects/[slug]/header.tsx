@@ -46,7 +46,7 @@ export const Header: React.FC<Props> = ({ project }) => {
             : 'bg-white/10  border-zinc-200 lg:border-transparent'
         }`}
       >
-        <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+        <div className="max-w-5xl container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
             <Link
               target="_blank"
@@ -84,7 +84,7 @@ export const Header: React.FC<Props> = ({ project }) => {
         </div>
       </div>
       <div className="container mx-auto relative isolate overflow-hidden  py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center flex flex-col items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
               {project.title}

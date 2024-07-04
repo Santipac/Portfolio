@@ -91,6 +91,8 @@ module.exports = {
           "radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         "fade-in": "fade-in 3s ease-in-out forwards",
         title: "title 3s ease-out forwards",
@@ -98,6 +100,14 @@ module.exports = {
         "fade-right": "fade-right 3s ease-in-out forwards",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "border-beam": {
           "100%": {
             "offset-distance": "100%",

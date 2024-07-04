@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import profile from '../../../public/images/me.jpg';
-import FiverrIcon from '../assets/svgs/fiverrIcon';
-import LinkedinIcon from '../assets/svgs/linkedinIcon';
+import FiverrIcon from '../assets/svgs/media/fiverr-icon';
+import LinkedinIcon from '../assets/svgs/media/linkedin-icon';
 import { calSans } from '@/app/fonts';
 import { getTranslation } from '@/get-translation';
 import { Navigation } from '../components/navigation';
@@ -11,7 +11,7 @@ import { LangParams } from '@/interfaces';
 import { experience } from '@/constants/experience';
 import { certifications } from '@/constants/certifications';
 import { BorderBeam } from '../components/borderBeam';
-import UdemyIcon from '../assets/svgs/udemyIcon';
+import UdemyIcon from '../assets/svgs/media/udemy-icon';
 
 export default async function ResumePage({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
@@ -39,21 +39,21 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
             <article className="flex items-center gap-2">
               <Link
                 href="https://github.com/Santipac"
-                className="inline-flex items-center w-fit px-2 py-1  hover:text-neutral-300 transition-colors duration-300 gap-2 rounded group text-sm"
+                className="inline-flex items-center w-fit px-2 py-1  text-neutral-400 hover:text-neutral-300 transition-colors duration-300 gap-2 rounded group text-sm"
               >
                 <Github className="h-7 w-7 m-0 p-0" />
                 Github
               </Link>
               <Link
                 href="https://www.linkedin.com/in/santiagopacinidev/"
-                className="inline-flex items-center w-fit px-2 py-1  hover:text-blue-400 transition-colors duration-300 gap-2 rounded group text-sm"
+                className="inline-flex items-center w-fit px-2 py-1  text-neutral-400 hover:text-blue-400 transition-colors duration-300 gap-2 rounded group text-sm"
               >
                 <LinkedinIcon className="h-7 w-7 m-0 p-0" />
                 Linkedin
               </Link>
               <Link
                 href="https://www.fiverr.com/santipac"
-                className="inline-flex items-center w-fit px-2 py-1  hover:text-emerald-400 transition-colors duration-300 gap-2 rounded group text-sm"
+                className="inline-flex items-center w-fit px-2 py-1 text-neutral-400  hover:text-emerald-400 transition-colors duration-300 gap-2 rounded group text-sm"
               >
                 <FiverrIcon className="h-7 w-7 m-0 p-0" />
                 Fiverr
@@ -77,6 +77,7 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
               </p>
             </section>
           </article>
+
           {/* Certifications */}
           <article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
@@ -92,7 +93,7 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
                   </span>
                   <Link
                     href={cert.link}
-                    className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md hover:border-neutral-600 transition-colors duration-300"
+                    className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md hover:border-neutral-600 transition-colors duration-300 overflow-hidden"
                     target="_blank"
                   >
                     <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" />

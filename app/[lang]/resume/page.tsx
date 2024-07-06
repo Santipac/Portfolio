@@ -12,6 +12,7 @@ import { experience } from '@/constants/experience';
 import { certifications } from '@/constants/certifications';
 import { BorderBeam } from '../components/borderBeam';
 import UdemyIcon from '../assets/svgs/media/udemy-icon';
+import { backend, frontend, stack, tools } from '@/constants/stack';
 
 export default async function ResumePage({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
@@ -78,6 +79,46 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
             </section>
           </article>
 
+          {/* Stack */}
+          <article className="flex flex-col lg:flex-row w-full gap-4">
+            <section className="w-full lg:w-1/5">
+              <h2 className="text-xl font-semibold font-sans w-fit">
+                {t.links.stack}
+              </h2>
+            </section>
+            <section className="w-full lg:w-4/5 space-y-4">
+              <p className="text-zinc-300 text-sm font-light leading-7">
+                {t.stack.description}
+              </p>
+              <article className="flex flex-wrap gap-2">
+                {frontend.map(tec => (
+                  <span
+                    key={tec.label}
+                    className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm shadow-md"
+                  >
+                    {tec.label}
+                  </span>
+                ))}
+                {backend.map(tec => (
+                  <span
+                    key={tec.label}
+                    className="px-2 py-1 bg-red-500/20 text-red-400 rounded-full text-sm shadow-md"
+                  >
+                    {tec.label}
+                  </span>
+                ))}
+                {tools.map(tec => (
+                  <span
+                    key={tec.label}
+                    className="px-2 py-1 bg-zinc-500/20 text-zinc-400 rounded-full text-sm shadow-md"
+                  >
+                    {tec.label}
+                  </span>
+                ))}
+              </article>
+            </section>
+          </article>
+
           {/* Certifications */}
           <article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
@@ -119,6 +160,7 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
               ))}
             </section>
           </article>
+
           {/* Experience */}
           <article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
@@ -135,7 +177,6 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
                     className="rounded object-contain h-11 w-11 mt-1 hidden lg:block"
                   />
                   <section className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md">
-                    {/* <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" /> */}
                     <Image
                       src={exp.logo}
                       alt={`${exp.company} logo`}

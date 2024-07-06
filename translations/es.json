@@ -18,6 +18,9 @@
     "firstParagraph": "Soy un desarrollador frontend con +2 años de experiencia dedicados ayudando a empresas a lograr sus objetivos a través de la construcción o mejora de aplicaciones / sitios webs. Tengo un amplio conocimiento en el ecosistema de React en el lado del cliente. ",
     "secondParagraph": "También puedo crear aplicaciones backend altamente escalables y robutas utilizando tecnologías como NodeJS o NestJS."
   },
+  "stack": {
+    "description": "Algunas de las tecnologías o herramientas con las que trabajo diariamente."
+  },
   "experience": {
     "title": "Experiencia",
     "button": "Visitar Web"

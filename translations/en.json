@@ -18,6 +18,9 @@
     "firstParagraph": "I'm a frontend developer with +2 years of experience helping different companies achieve their goals through the building or improvement of applications/websites. I've extensive knowledge of the React ecosystem on the client side.",
     "secondParagraph": "I can also create highly scalable and robust backend applications using technologies like NodeJS or NestJS."
   },
+  "stack": {
+    "description": "Some of the technologies or tools I work with on a daily basis."
+  },
   "experience": {
     "title": "Experience",
     "button": "Visit Website"

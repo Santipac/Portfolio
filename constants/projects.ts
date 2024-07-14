@@ -6,6 +6,7 @@ import Tesla_Image from '../public/images/Tesla_Image.png';
 import Dolarizapp_Image from '../public/images/Dolarizapp_Image.png';
 import Dolarizapp_Mobile from '../public/images/Dolarizapp_mobile.png';
 import CloutyShop_Image from '../public/images/clouty_Image.png';
+import Honomailer_Image from '../public/images/honomailer_Image.png';
 
 interface ProjectsContent {
   en: IProject[];
@@ -79,6 +80,16 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://dolarizapp.vercel.app/',
       repository: 'https://github.com/Santipac/dolarizapp-web',
+    },
+    {
+      slug: 'honomailer',
+      title: 'Honomailer',
+      brief: 'A simple serverless backend using Hono.js.',
+      image: Honomailer_Image,
+      description:
+        'The main idea of this project was to send emails from a contact form without having to expose private access keys on the client side and to avoid creating a backend that needs a lot of configuration to be able to use it, it should be quick to implement and simple to deploy.',
+      stack: ['Hono.js', 'Brevo', 'Vercel'],
+      repository: 'https://github.com/Santipac/honomailer',
     },
     {
       slug: 'clouty-shop',
@@ -222,6 +233,16 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://dolarizapp.vercel.app/',
       repository: 'https://github.com/Santipac/dolarizapp-web',
+    },
+    {
+      slug: 'honomailer',
+      title: 'Honomailer',
+      brief: 'Un simple serverless backend usando Hono.js.',
+      image: Honomailer_Image,
+      description:
+        'La idea principal de este proyecto era lograr enviar emails desde un formulario de contacto sin tener que exponer claves de accesos privadas en el lado del cliente y evitar crear un backend que necesite mucha configuración para poder usarlo debía ser rápido de implementar y simple de desplegar.',
+      stack: ['Hono.js', 'Brevo', 'Vercel'],
+      repository: 'https://github.com/Santipac/honomailer',
     },
     {
       slug: 'clouty-shop',

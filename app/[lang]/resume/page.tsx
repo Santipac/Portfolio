@@ -119,50 +119,8 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
             </section>
           </article>
 
-          {/* Certifications */}
-          <article className="flex flex-col lg:flex-row w-full gap-2">
-            <section className="w-full lg:w-1/5">
-              <h2 className="text-xl font-semibold font-sans">
-                {t.links.certifications}
-              </h2>
-            </section>
-            <section className="w-full lg:w-4/5 space-y-2 grid grid-cols-1 auto-rows-min gap-6">
-              {certifications[lang].map((cert, i) => (
-                <article key={i} className="flex gap-4 w-full">
-                  <span className="hidden lg:block  mt-1">
-                    <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
-                  </span>
-                  <Link
-                    href={cert.link}
-                    className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md hover:border-neutral-600 transition-colors duration-300 overflow-hidden"
-                    target="_blank"
-                  >
-                    <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" />
-                    <span className=" lg:hidden  mt-1">
-                      <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
-                    </span>
-                    <h2 className="text-xl font-semibold tracking-tighter text-zinc-100 truncate">
-                      {cert.title}
-                    </h2>
-                    <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
-                      {cert.description}
-                    </h2>
-                    <article className="flex justify-between items-center">
-                      <p className="text-zinc-400 text-sm uppercase font-medium">
-                        {cert.platform}
-                      </p>
-                      <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
-                        {cert.expeditionDate}
-                      </h2>
-                    </article>
-                  </Link>
-                </article>
-              ))}
-            </section>
-          </article>
-
-          {/* Experience */}
-          <article className="flex flex-col lg:flex-row w-full gap-2">
+{/* Experience */}
+<article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
               <h2 className="text-xl font-semibold font-sans">
                 {t.links.experience}
@@ -213,6 +171,50 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
               ))}
             </section>
           </article>
+          
+          {/* Certifications */}
+          <article className="flex flex-col lg:flex-row w-full gap-2">
+            <section className="w-full lg:w-1/5">
+              <h2 className="text-xl font-semibold font-sans">
+                {t.links.certifications}
+              </h2>
+            </section>
+            <section className="w-full lg:w-4/5 space-y-2 grid grid-cols-1 auto-rows-min gap-6">
+              {certifications[lang].map((cert, i) => (
+                <article key={i} className="flex gap-4 w-full">
+                  <span className="hidden lg:block  mt-1">
+                    <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
+                  </span>
+                  <Link
+                    href={cert.link}
+                    className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md hover:border-neutral-600 transition-colors duration-300 overflow-hidden"
+                    target="_blank"
+                  >
+                    <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" />
+                    <span className=" lg:hidden  mt-1">
+                      <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
+                    </span>
+                    <h2 className="text-xl font-semibold tracking-tighter text-zinc-100 truncate">
+                      {cert.title}
+                    </h2>
+                    <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
+                      {cert.description}
+                    </h2>
+                    <article className="flex justify-between items-center">
+                      <p className="text-zinc-400 text-sm uppercase font-medium">
+                        {cert.platform}
+                      </p>
+                      <h2 className="text-zinc-400 text-xs min-[500px]:text-sm">
+                        {cert.expeditionDate}
+                      </h2>
+                    </article>
+                  </Link>
+                </article>
+              ))}
+            </section>
+          </article>
+
+          
         </main>
       </section>
     </section>

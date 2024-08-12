@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: ['https://santiagopacini.vercel.app/es/sitemap.xml', 'https://santiagopacini.vercel.app/en/sitemap.xml'],
+    sitemap: ['https://santiagopacini.com/es/sitemap.xml', 'https://santiagopacini.com/en/sitemap.xml'],
   }
 }

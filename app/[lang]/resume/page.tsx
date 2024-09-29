@@ -205,7 +205,18 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
                   >
                     <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" />
                     <span className=" lg:hidden  mt-1">
-                      <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
+                      {cert.platform === 'udemy' && (
+                        <UdemyIcon className="rounded bg-white p-1 w-full h-full" />
+                      )}
+                      {cert.platform === 'devtalles' && (
+                        <Image
+                          src={devtallesLogo.src}
+                          alt="devtalles logo"
+                          height={45}
+                          width={45}
+                          className="bg-white rounded object-contain w-11"
+                        />
+                      )}
                     </span>
                     <h2 className="text-xl font-semibold tracking-tighter text-zinc-100 truncate">
                       {cert.title}

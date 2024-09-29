@@ -1,6 +1,13 @@
 export const certifications = {
     en: [
         {
+            title: 'React Native CLI: native apps for iOS and Android',
+            link: 'https://cursos.devtalles.com/certificates/vd4shfacik',
+            description: '',
+            expeditionDate: '09/12/2024',
+            platform: 'devtalles', // udemy | platzi | other
+        },
+        {
             title: 'NestJS Zero to Hero - Modern TypeScript Back-end Development',
             link: 'https://www.udemy.com/certificate/UC-2ca6ce34-d9dc-4573-b71d-8688056ced9f',
             description: '',
@@ -30,6 +37,13 @@ export const certifications = {
         },
     ],
     es: [
+        {
+            title: 'React Native CLI: Aplicaciones nativas para iOS y Android',
+            link: 'https://cursos.devtalles.com/certificates/vd4shfacik',
+            description: '',
+            expeditionDate: '12/09/2024',
+            platform: 'devtalles', // udemy | platzi | other
+        },
         {
             title: 'NestJS de 0 a Experto - Desarrollo back-end TypeScript moderno',
             link: 'https://www.udemy.com/certificate/UC-2ca6ce34-d9dc-4573-b71d-8688056ced9f',

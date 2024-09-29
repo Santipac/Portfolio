@@ -12,7 +12,8 @@ import { experience } from '@/constants/experience';
 import { certifications } from '@/constants/certifications';
 import { BorderBeam } from '../components/borderBeam';
 import UdemyIcon from '../assets/svgs/media/udemy-icon';
-import { backend, frontend, stack, tools } from '@/constants/stack';
+import { backend, frontend, tools } from '@/constants/stack';
+import devtallesLogo from '@/app/[lang]/assets/images/devtalles-logo.png';
 
 export default async function ResumePage({ params: { lang } }: LangParams) {
   const t = await getTranslation(lang);
@@ -119,8 +120,8 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
             </section>
           </article>
 
-{/* Experience */}
-<article className="flex flex-col lg:flex-row w-full gap-2">
+          {/* Experience */}
+          <article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
               <h2 className="text-xl font-semibold font-sans">
                 {t.links.experience}
@@ -171,7 +172,7 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
               ))}
             </section>
           </article>
-          
+
           {/* Certifications */}
           <article className="flex flex-col lg:flex-row w-full gap-2">
             <section className="w-full lg:w-1/5">
@@ -182,9 +183,21 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
             <section className="w-full lg:w-4/5 space-y-2 grid grid-cols-1 auto-rows-min gap-6">
               {certifications[lang].map((cert, i) => (
                 <article key={i} className="flex gap-4 w-full">
-                  <span className="hidden lg:block  mt-1">
-                    <UdemyIcon className="rounded bg-white p-1 h-11 w-11" />
+                  <span className="hidden lg:block mt-1  h-11 w-11">
+                    {cert.platform === 'udemy' && (
+                      <UdemyIcon className="rounded bg-white p-1 w-full h-full" />
+                    )}
+                    {cert.platform === 'devtalles' && (
+                      <Image
+                        src={devtallesLogo.src}
+                        alt="devtalles logo"
+                        height={45}
+                        width={45}
+                        className="bg-white rounded object-contain w-11"
+                      />
+                    )}
                   </span>
+
                   <Link
                     href={cert.link}
                     className="relative border border-neutral-800 bg-neutral-900 p-4 flex flex-col rounded-xl w-full gap-3 shadow-md hover:border-neutral-600 transition-colors duration-300 overflow-hidden"
@@ -213,8 +226,6 @@ export default async function ResumePage({ params: { lang } }: LangParams) {
               ))}
             </section>
           </article>
-
-          
         </main>
       </section>
     </section>

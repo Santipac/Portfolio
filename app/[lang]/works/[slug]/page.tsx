@@ -1,9 +1,7 @@
-import { format } from 'date-fns';
 import Image from 'next/image';
 import { MDXContent } from '@/app/[lang]/components/mdx-content';
 import { getWorkPost, getWorkPosts } from '@/util/posts/work';
 import { Header } from './header';
-import { es, enUS } from 'date-fns/locale';
 
 export async function generateStaticParams({
   params: { lang },

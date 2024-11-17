@@ -43,20 +43,6 @@ export const Header: React.FC<Props> = ({ work }) => {
         }`}
       >
         <div className="max-w-5xl container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-          <div className="flex justify-between gap-8">
-            {work.url && (
-              <Link target="_blank" href={work.url}>
-                <Globe
-                  className={`w-6 h-6 duration-200 hover:font-medium ${
-                    isIntersecting
-                      ? ' text-zinc-400 hover:text-zinc-100'
-                      : 'text-zinc-600 hover:text-zinc-900'
-                  } `}
-                />
-              </Link>
-            )}
-          </div>
-
           <Link
             href="/works"
             className={`duration-200 hover:font-medium ${

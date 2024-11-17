@@ -1,9 +1,7 @@
 'use client';
 import { navigation } from '@/constants/navigation';
 import { Locale } from '@/i18n-config';
-import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react';
 
 interface Props {
@@ -11,7 +9,6 @@ interface Props {
 }
 
 export const Navigation: React.FC<Props> = ({ lang }) => {
-  const router = useRouter();
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
   useEffect(() => {
@@ -45,13 +42,6 @@ export const Navigation: React.FC<Props> = ({ lang }) => {
               </Link>
             ))}
           </div>
-          <button
-            type="button"
-            className="duration-200 text-zinc-300 hover:text-zinc-100"
-            onClick={() => router.back()}
-          >
-            <ArrowLeft className="w-6 h-6 " />
-          </button>
         </div>
       </div>
     </header>

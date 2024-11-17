@@ -7,7 +7,13 @@ import { navigation } from '@/constants/navigation';
 import { calSans } from '../fonts';
 import { cn } from '@/util/classNames';
 
-export default async function Home({ params: { lang } }: LangParams) {
+export default async function Home(props: LangParams) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const t = await getTranslation(lang);
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">

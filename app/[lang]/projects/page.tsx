@@ -6,7 +6,14 @@ import { LangParams } from '@/interfaces';
 import { Navigation } from '../components/navigation';
 import { Card } from '../components/card';
 import { getTranslation } from '@/get-translation';
-export default async function ProjectsPage({ params: { lang } }: LangParams) {
+
+export default async function ProjectsPage(props: LangParams) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const t = await getTranslation(lang);
 
   return (

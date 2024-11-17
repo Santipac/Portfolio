@@ -5,13 +5,18 @@ export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }
 
-export default function ProjectsLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+export default async function ProjectsLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{ lang: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html
       lang={params.lang}

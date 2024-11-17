@@ -5,11 +5,12 @@ import { Analytics } from '@vercel/analytics/react';
 import '../../globals.css';
 import { englishMetadata, spanishMetadata } from '@/constants/metadata';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: 'es' | 'en' };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ lang: 'es' | 'en' }>;
+  }
+) {
+  const params = await props.params;
   return params.lang === 'en' ? englishMetadata : spanishMetadata;
 }
 
@@ -17,13 +18,18 @@ export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+export default async function RootLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{ lang: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html
       lang={params.lang}

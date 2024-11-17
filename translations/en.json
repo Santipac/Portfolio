@@ -5,6 +5,7 @@
     "experience": "Experience",
     "projects": "Projects",
     "services": "Services",
+    "works": "Works",
     "stack": "Stack",
     "certifications": "Certifications"
   },
@@ -29,5 +30,9 @@
     "title": "Projects",
     "brief": "Some of my most important or recent projects that I have been working on.",
     "cta": "Read more"
+  },
+  "works": {
+    "title": "Works",
+    "brief": "Some of the most important works that I have been working on."
   }
 }

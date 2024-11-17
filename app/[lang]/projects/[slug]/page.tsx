@@ -11,17 +11,18 @@ type PropsParams = {
 };
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string;
     lang: Locale;
-  };
+  }>;
 }
 export async function generateStaticParams(): Promise<PropsParams['params'][]> {
   const projectsES = projects.es.map(project => ({ slug: project.slug }));
   const projectsEN = projects.en.map(project => ({ slug: project.slug }));
   return [...projectsEN, ...projectsES];
 }
-export default async function PostPage({ params }: Props) {
+export default async function PostPage(props: Props) {
+  const params = await props.params;
   const slug = params?.slug;
   const project = projects[params.lang].find(project => project.slug === slug);
 
@@ -48,9 +49,9 @@ export default async function PostPage({ params }: Props) {
               ? 'Algunas de las tecnologías que utilice en este proyecto:'
               : 'Some of the technologies used in this project'}
           </p>
-          <ul className="p-0 m-0 list-none flex gap-4 flex-wrap text-sm text-zinc-300">
+          <ul className="p-0 m-0 list-none flex gap-2 flex-wrap text-sm text-zinc-300">
             {project.stack.map(tec => (
-              <li key={tec} className=" text-zinc-800">
+              <li key={tec}  className="px-4 py-1.5 bg-white text-zinc-900 rounded-full text-sm shadow-sm">
                 {tec}
               </li>
             ))}

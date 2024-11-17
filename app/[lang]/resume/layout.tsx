@@ -4,13 +4,18 @@ import { calSans, inter } from '@/app/fonts';
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }
-export default function ResumeLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+export default async function ResumeLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{ lang: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html
       lang={params.lang}

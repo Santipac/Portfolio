@@ -15,7 +15,13 @@ import UdemyIcon from '../assets/svgs/media/udemy-icon';
 import { backend, frontend, tools } from '@/constants/stack';
 import devtallesLogo from '@/app/[lang]/assets/images/devtalles-logo.png';
 
-export default async function ResumePage({ params: { lang } }: LangParams) {
+export default async function ResumePage(props: LangParams) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const t = await getTranslation(lang);
 
   return (

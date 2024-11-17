@@ -5,6 +5,7 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "services": "Servicios",
+    "works": "Trabajos",
     "stack": "Stack",
     "certifications": "Certificaciones"
   },
@@ -29,5 +30,9 @@
     "title": "Proyectos",
     "brief": "Algunos de los proyectos más importantes que hice o en los que estuve trabajando.",
     "cta": "Leer más"
+  },
+  "works": {
+    "title": "Trabajos",
+    "brief": "Algunos de los trabajos más importantes que hice o en los que estuve trabajando."
   }
 }

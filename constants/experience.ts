@@ -20,20 +20,6 @@ export const experience = {
       logo: educabot,
     },
     {
-      company: 'Comunyt',
-      position: 'React Developer',
-      time: 'Apr 2023 - Jul 2023',
-      description: "I worked on the creation of the company's landing page.",
-      task: [
-        'Creation of different views or sections of the page',
-        'Build the internationalization of the site.',
-        'API calls from a backoffice to bring the corresponding information.',
-        'Documentation and organization of tasks in Kanban board.',
-      ],
-      link: 'https://comunyt.com/',
-      logo: comunyt,
-    },
-    {
       company: 'Aoki Technology',
       position: 'Frontend Developer',
       time: 'Aug 2022 - Mar 2023',
@@ -77,21 +63,6 @@ export const experience = {
       ],
       link: 'https://educabot.com/',
       logo: educabot,
-    },
-    {
-      company: 'Comunyt',
-      position: 'React Developer',
-      time: 'Abr 2023 - Jul 2023',
-      description:
-        'Participé de forma activa en la creación de la Landing Page de la empresa',
-      task: [
-        'Creación de diferentes vistas o secciones de la página.',
-        'Creación del soporte multi-idioma o internacionalización de la página.',
-        'Consumo de API desde un backoffice para traer la información correspondiente.',
-        'Documentacion y organización de las tareas en tablero Kanban.',
-      ],
-      link: 'https://comunyt.com/',
-      logo: comunyt,
     },
     {
       company: 'Aoki Tecnología',

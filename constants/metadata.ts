@@ -9,7 +9,7 @@ export const spanishMetadata: Metadata = {
       title: 'Santiago Pacini | Portfolio',
       description: 'Desarrollador Frontend con conocimientos Full-Stack',
       url: 'https://santiagopacini.com',
-      siteName: 'santiagopacini.vercel.app',
+      siteName: 'santiagopacini.com',
       type: 'website',
       images: [
         {
@@ -54,7 +54,7 @@ export const spanishMetadata: Metadata = {
       title: 'Santiago Pacini | Portfolio',
       description: 'Frontend Developer with Full-Stack knowledge',
       url: 'https://santiagopacini.com',
-      siteName: 'santiagopacini.vercel.app',
+      siteName: 'santiagopacini.com',
       type: 'website',
       images: [
         {

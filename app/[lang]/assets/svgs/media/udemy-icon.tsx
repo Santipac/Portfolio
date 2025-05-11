@@ -1,10 +1,9 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 export default function UdemyIcon(props: SVGProps<SVGSVGElement>) {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
-      width="256px"
-      height="256px"
       viewBox="0 0 256 497"
       fill="#000000"
       x="128"

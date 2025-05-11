@@ -7,7 +7,7 @@ import { calSans } from '@/app/fonts';
 import { getTranslation } from '@/get-translation';
 import { Navigation } from '../components/navigation';
 import { Github, Globe } from 'lucide-react';
-import { LangParams } from '@/interfaces';
+import type { LangParams } from '@/interfaces';
 import { experience } from '@/constants/experience';
 import { certifications } from '@/constants/certifications';
 import { BorderBeam } from '../components/borderBeam';
@@ -18,9 +18,7 @@ import devtallesLogo from '@/app/[lang]/assets/images/devtalles-logo.png';
 export default async function ResumePage(props: LangParams) {
   const params = await props.params;
 
-  const {
-    lang
-  } = params;
+  const { lang } = params;
 
   const t = await getTranslation(lang);
 
@@ -134,8 +132,8 @@ export default async function ResumePage(props: LangParams) {
               </h2>
             </section>
             <section className="w-full lg:w-4/5 space-y-2 grid grid-cols-1 auto-rows-min gap-6">
-              {experience[lang].map((exp, i) => (
-                <article key={i} className="flex gap-4">
+              {experience[lang].map(exp => (
+                <article key={crypto.randomUUID()} className="flex gap-4">
                   <Image
                     src={exp.logo}
                     alt={`${exp.company} logo`}
@@ -187,8 +185,11 @@ export default async function ResumePage(props: LangParams) {
               </h2>
             </section>
             <section className="w-full lg:w-4/5 space-y-2 grid grid-cols-1 auto-rows-min gap-6">
-              {certifications[lang].map((cert, i) => (
-                <article key={i} className="flex gap-4 w-full">
+              {certifications[lang].map(cert => (
+                <article
+                  key={crypto.randomUUID()}
+                  className="flex gap-4 w-full"
+                >
                   <span className="hidden lg:block mt-1  h-11 w-11">
                     {cert.platform === 'udemy' && (
                       <UdemyIcon className="rounded bg-white p-1 w-full h-full" />
@@ -212,7 +213,7 @@ export default async function ResumePage(props: LangParams) {
                     <BorderBeam colorFrom="#171717" colorTo="#f4f4f5" />
                     <span className=" lg:hidden  mt-1">
                       {cert.platform === 'udemy' && (
-                        <UdemyIcon className="rounded bg-white p-1 w-full h-full" />
+                        <UdemyIcon className="rounded bg-white p-1 w-11 h-11" />
                       )}
                       {cert.platform === 'devtalles' && (
                         <Image

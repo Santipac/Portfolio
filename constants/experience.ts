@@ -1,6 +1,5 @@
 import educabot from '@/public/images/educabot_logo.jpg';
 import alkemy from '@/public/images/alkemy_logo.jpg';
-import comunyt from '@/public/images/comunyt_logo.jpg';
 import aoki from '@/public/images/aoki_logo.jpg';
 
 export const experience = {
@@ -10,11 +9,14 @@ export const experience = {
       position: 'Frontend Developer',
       time: 'Jul 2023 - Present',
       description:
-        'Participation in different parts of the application suite for web and mobile platforms.',
+        'Ed-tech company dedicated to the formation of a new generation capable of using technology in the search for creative solutions to real problems. Through workshops, courses, content and products we aim to create a community passionate about imagining, creating and sharing.',
       task: [
-        'Creation and implementation of new features',
-        'Report and fix bugs',
-        'Review code from other devs.',
+        'I led the frontend development of 5 products, meeting critical deadlines in 95% of the cases.',
+        'Implemented significant improvements in web and mobile platforms by leveraging React and React Native for cross-platform efficiency, Zustand for simplified state management, React Query for optimized data fetching and caching.',
+        'Successfully led the migration from Next.js to a pure React application, enhancing performance metrics by 40% while maintaining seamless customer experience throughout the transition and implementing UX improvements that increased overall application usability and user satisfaction scores.',
+        'I participated in technical selection processes through live-coding interviews with the CTO.',
+        'On-boarded and mentored new developers, helping them in their adaptation process to the way ofworking.',
+        'I carried out continuous improvement initiatives in the development and documentation processes.'
       ],
       link: 'https://educabot.com/',
       logo: educabot,
@@ -24,11 +26,11 @@ export const experience = {
       position: 'Frontend Developer',
       time: 'Aug 2022 - Mar 2023',
       description:
-        'Creation of Admin Dashboards for the automation of customer tasks.',
+        'Company dedicated to the development of chatbots with AI for Argentinean companies.',
       task: [
-        ' Creation of tables with filters to speed up the queries of remittances and invoices from the backend.',
-        'Route management for correct navigation between views',
-        ' Context API to manage the global state in a simple way and without dependencies.',
+        'Development and maintenance of administrative panels for multiple clients using React, Next.js and Node.js.',
+        'Constant communication with Product Owners to define, validate and prioritize functionalities.',
+        'Refactoring of legacy components, improving load times by 20%.',
       ],
       link: 'https://aokitech.com.ar/',
       logo: aoki,
@@ -55,11 +57,14 @@ export const experience = {
       position: 'Desarrollador Frontend',
       time: 'Jul 2023 - Presente',
       description:
-        'Participación en distintas partes de la suite de aplicaciones para las plataformas web y mobile.',
+        'Empresa Ed-tech dedicada a la formación de una nueva generación capaz de emplear tecnología en la búsqueda de soluciones creativas a problemas reales. A través de talleres, cursos, contenido y productos nos proponemos crear una comunidad apasionada por imaginar, crear y compartir.',
       task: [
-        'Creación e implementación de nuevas features utlizando buenas prácticas',
-        'Reportar y corregir bugs',
-        ' Revisar código de otros devs',
+        'Lideré el desarrollo frontend de 5 productos, cumpliendo plazos críticos en el 95% de los casos.',
+        'Implementé mejoras significativas en plataformas web y móviles aprovechando React y React Native para la eficiencia multiplataforma, Zustand para la gestión simplificada de estados, React Query para la obtención optimizada de datos y almacenamiento en caché.',
+        'Participé en la proceso de migración exitosa de Next.js a una aplicación pura de React, mejorando las métricas de rendimiento en un 40% mientras mantenía una experiencia de usuario sin complicaciones durante la transición y mejorando la usabilidad general de la aplicación y las puntuaciones de satisfacción del usuario.',
+        'Participé en procesos de selección técnica a través de entrevistas en vivo con el CTO.',
+        'Acompañé a nuevos desarrolladores en su proceso de adaptación, ayudándolos en su proceso de incorporación.',
+        'Realicé mejoras continuas en los procesos de desarrollo y documentación.'
       ],
       link: 'https://educabot.com/',
       logo: educabot,
@@ -69,11 +74,11 @@ export const experience = {
       position: 'Desarrollador Frontend',
       time: 'Ago 2022 - Jun 2023',
       description:
-        'Creación de paneles administrativos para la automatización de las tareas de los clientes.',
+        'Empresa dedicada al desarrollo de chatbots con IA para empresas argentinas.',
       task: [
-        'Creación de tablas con filtros para agilizar las consultas de remitos y facturas desde el backend.',
-        'Manejo de rutas para una correcta navegación entre vistas',
-        'Context API para gestionar el estado global de forma sencilla y sin dependencias.',
+        'Desarrollo y mantenimiento de paneles administrativos para múltiples clientes utilizando React, Next.js y Node.js.',
+        'Constante comunicación con Product Owners para definir, validar y priorizar funcionalidades.',
+        'Refactorización de componentes legacy, mejorando el tiempo de carga en un 20%.',
       ],
       link: 'https://aokitech.com.ar/',
       logo: aoki,

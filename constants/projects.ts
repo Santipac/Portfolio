@@ -1,5 +1,6 @@
 import { IProject } from '@/interfaces/projects';
 import CS_Image from '../public/images/Store_Image.png';
+import NutriAnalyzer_Image from '../public/images/nutrianalyzer_Image.png';
 import Twitter_Image from '../public/images/Twitter_Image.png';
 import Kanban_Image from '../public/images/Kanban_Image.png';
 import Tesla_Image from '../public/images/Tesla_Image.png';
@@ -40,6 +41,30 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://csgostore.vercel.app/',
       repository: 'https://github.com/Santipac/CS-Store',
+    },
+    {
+      slug: 'nutrianalyzer',
+      title: 'NutriAnalyzer',
+      brief:
+        'An intelligent web application that analyzes food and provides detailed nutritional information using AI.',
+      image: NutriAnalyzer_Image,
+      description:
+        'Designed for health-conscious users who want to better understand what they eat and receive personalized advice. The app features complete nutritional analysis including macronutrients, micronutrients, calorie counting, and health scoring. It includes a smart nutritional chat with a virtual nutritionist that provides personalized recommendations based on user profiles and fitness goals.',
+      stack: [
+        'NextJS 15',
+        'React 19',
+        'TypeScript',
+        'TailwindCSS',
+        'Radix UI',
+        'Zustand',
+        'Vercel AI SDK',
+        'OpenAI GPT-3.5',
+        'Lucide React',
+        'PostCSS',
+        'Edge Runtime',
+      ],
+      url: 'https://food-health-analyzer-prod.vercel.app/',
+      repository: 'https://github.com/Santipac/food-ai-analyzer',
     },
     {
       slug: 'dolarizapp-mobile',
@@ -194,6 +219,30 @@ export const projects: ProjectsContent = {
       ],
       url: 'https://csgostore.vercel.app/',
       repository: 'https://github.com/Santipac/CS-Store',
+    },
+    {
+      slug: 'nutrianalyzer',
+      title: 'NutriAnalyzer',
+      brief:
+        'Una aplicación web inteligente que analiza alimentos y proporciona información nutricional detallada usando IA.',
+      image: NutriAnalyzer_Image,
+      description:
+        'Diseñada para usuarios conscientes de su salud que quieren entender mejor lo que comen y recibir consejos personalizados. La app incluye análisis nutricional completo con macronutrientes, micronutrientes, conteo de calorías y puntuación de salud. Cuenta con un chat nutricional inteligente con un nutricionista virtual que proporciona recomendaciones personalizadas basadas en el perfil del usuario y objetivos de fitness.',
+      stack: [
+        'NextJS 15',
+        'React 19',
+        'TypeScript',
+        'TailwindCSS',
+        'Radix UI',
+        'Zustand',
+        'Vercel AI SDK',
+        'OpenAI GPT-3.5',
+        'Lucide React',
+        'PostCSS',
+        'Edge Runtime',
+      ],
+      url: 'https://food-health-analyzer-prod.vercel.app/',
+      repository: 'https://github.com/Santipac/food-ai-analyzer',
     },
     {
       slug: 'dolarizapp-mobile',
